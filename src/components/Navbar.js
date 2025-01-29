@@ -1,5 +1,4 @@
 import React from "react";
-// import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -10,6 +9,9 @@ const Navbar = () => {
         </li>
         <li style={{ margin: '0 30px' }}>
           <a href="#projects" className="navbar-link" style={{ color: '#ffffff', textDecoration: 'none', fontSize: '1.2rem', fontWeight: 600, letterSpacing: '1px', position: 'relative', padding: '12px 20px', borderRadius: '5px', transition: 'all 0.4s ease-in-out', textTransform: 'uppercase', cursor: 'pointer', boxShadow: '0 0 5px rgba(255, 107, 107, 0.6)', overflow: 'hidden' }}>Projects</a>
+        </li>
+        <li style={{ margin: '0 30px' }}>
+          <a href="#skills" className="navbar-link" style={{ color: '#ffffff', textDecoration: 'none', fontSize: '1.2rem', fontWeight: 600, letterSpacing: '1px', position: 'relative', padding: '12px 20px', borderRadius: '5px', transition: 'all 0.4s ease-in-out', textTransform: 'uppercase', cursor: 'pointer', boxShadow: '0 0 5px rgba(255, 107, 107, 0.6)', overflow: 'hidden' }}>Skills</a>
         </li>
         <li style={{ margin: '0 30px' }}>
           <a href="#about" className="navbar-link" style={{ color: '#ffffff', textDecoration: 'none', fontSize: '1.2rem', fontWeight: 600, letterSpacing: '1px', position: 'relative', padding: '12px 20px', borderRadius: '5px', transition: 'all 0.4s ease-in-out', textTransform: 'uppercase', cursor: 'pointer', boxShadow: '0 0 5px rgba(255, 107, 107, 0.6)', overflow: 'hidden' }}>About</a>
