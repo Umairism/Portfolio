@@ -1,7 +1,23 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send the message, please try again.');
+      });
+
+    e.target.reset();
+  };
+
   return (
     <section id="contact" style={{ height: '100vh', overflowY: 'auto', position: 'relative', backgroundColor: '#0d1b2a', color: '#ffffff' }}>
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', width: '100%' }}>
@@ -37,7 +53,7 @@ const Contact = () => {
         
         <p style={{ color: '#ffffff' }}>If you prefer, you can also fill out the contact form below, and I will get back to you as soon as possible!</p>
         
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={sendEmail}>
           <label htmlFor="name" style={{ color: '#555' }}>Your Name:</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required />
           

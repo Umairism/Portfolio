@@ -29,7 +29,7 @@ const Projects = () => {
               to structure React applications and manage routing.
             </p>
             <a
-              href="https://github.com/umairism"
+              href="https://github.com/Umairism/Interactive-Portfolio"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: 'black' }}
