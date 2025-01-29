@@ -24,7 +24,7 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/umairism/" target="_blank" rel="noopener noreferrer" style={{ color: '#ff6b6b' }}>
+            <a href="https://www.linkedin.com/in/umairsim/" target="_blank" rel="noopener noreferrer" style={{ color: '#ff6b6b' }}>
               <FaLinkedin size={30} />
             </a>
           </li>
@@ -38,13 +38,13 @@ const Contact = () => {
         <p style={{ color: '#ffffff' }}>If you prefer, you can also fill out the contact form below, and I will get back to you as soon as possible!</p>
         
         <form className="contact-form">
-          <label htmlFor="name" style={{ color: '#ffffff' }}>Your Name:</label>
+          <label htmlFor="name" style={{ color: '#555' }}>Your Name:</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required />
           
-          <label htmlFor="email" style={{ color: '#ffffff' }}>Your Email:</label>
+          <label htmlFor="email" style={{ color: '#555' }}>Your Email:</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required />
           
-          <label htmlFor="message" style={{ color: '#ffffff' }}>Your Message:</label>
+          <label htmlFor="message" style={{ color: '#555' }}>Your Message:</label>
           <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
           
           <button type="submit" className="btn-main" style={{ backgroundColor: '#ff6b6b', color: '#ffffff' }}>Send Message</button>

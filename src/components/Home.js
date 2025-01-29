@@ -94,6 +94,17 @@ const Home = () => {
           width: '100%',
         }}
         >
+        <img
+          src={require('../Images/me3.jpg')}
+          alt="Profile"
+          style={{
+            width: '250px',
+            height: '250px',
+            borderRadius: '50%',
+            objectFit: 'cover',
+            marginBottom: '1rem',
+          }}
+        />
         <h1 style={{ color: '#ffffff' }}>Muhammad Umair Hakeem</h1>
         <p style={{ color: '#ffffff', fontSize: '1.2rem', marginTop: '1rem' }}>
           Passionate and dedicated final-year Computer Science student with a deep love for technology, programming, and problem-solving.

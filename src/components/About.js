@@ -52,7 +52,7 @@ const About = () => {
           or simply want to chat about tech. Let’s create something amazing together!
         </p>
 
-        <a href="#contact" className="btn-main" style={{ color: '#ff6b6b' }}>
+        <a href="#contact" className="btn-main" style={{ color: 'black' }}>
           Contact Me
         </a>
       </div>

@@ -21,7 +21,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button onClick={toggleTheme} style={{ position: "fixed", top: "10px", right: "10px" }}>
+    <button onClick={toggleTheme} style={{ position: "fixed", top: "10px", right: "10px", backgroundColor: '#0d1b2a', color: '#ffffff', border: 'none', padding: '10px', borderRadius: '5px', cursor: 'pointer' }}>
       {isDarkMode ? "Light Mode" : "Dark Mode"}
     </button>
   );

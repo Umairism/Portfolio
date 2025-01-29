@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const projectCards = document.querySelectorAll('.project-card');
+      projectCards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const offset = windowHeight - rect.top;
+        card.style.zIndex = offset > 0 ? index + 1 : 0;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section id="projects" style={{ height: '100vh', overflowY: 'auto', position: 'relative', backgroundColor: '#0d1b2a', color: '#ffffff' }}>
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', width: '100%' }}>
         <h2 style={{ color: '#ffffff' }}>My Projects</h2>
-        <div className="projects-container">
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+        <div className="projects-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
             <h3 style={{ color: '#ffffff' }}>Personal Portfolio</h3>
             <p style={{ color: '#ffffff' }}>
               A personal portfolio website built with React.js to showcase my
@@ -17,13 +32,13 @@ const Projects = () => {
               href="https://github.com/umairism"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#ff6b6b' }}
+              style={{ color: 'black' }}
             >
               View on GitHub
             </a>
           </div>
 
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
             <h3 style={{ color: '#ffffff' }}>E-Commerce Website</h3>
             <p style={{ color: '#ffffff' }}>
               A full-stack e-commerce web application built using React.js,
@@ -34,13 +49,13 @@ const Projects = () => {
               href="https://github.com/Umairism"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#ff6b6b' }}
+              style={{ color: 'black' }}
             >
               View on GitHub
             </a>
           </div>
 
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
             <h3 style={{ color: '#ffffff' }}>Task Manager App</h3>
             <p style={{ color: '#ffffff' }}>
               A task management app created to help users organize and track their
@@ -51,13 +66,13 @@ const Projects = () => {
               href="https://github.com/umairism"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#ff6b6b' }}
+              style={{ color: 'black' }}
             >
               View on GitHub
             </a>
           </div>
 
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
             <h3 style={{ color: '#ffffff' }}>Weather Forecast App</h3>
             <p style={{ color: '#ffffff' }}>
               A weather app that fetches data from the OpenWeatherMap API. Users
@@ -69,7 +84,7 @@ const Projects = () => {
               href="https://github.com/umairism"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: '#ff6b6b' }}
+              style={{ color: 'black' }}
             >
               View on GitHub
             </a>

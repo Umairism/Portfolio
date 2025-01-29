@@ -276,7 +276,7 @@ strong {
 
 .btn-main {
   background-color: #ff6b6b;
-  color: white;
+  color: black;
   padding: 12px 30px;
   font-size: 1.1rem;
   font-weight: bold;
@@ -393,7 +393,7 @@ h2 {
 /* Contact Section Styling */
 #contact {
   padding: 60px 20px;
-  background-color: #f9fafb;
+  background-color: #333;
   text-align: center;
 }
 
@@ -426,23 +426,28 @@ p {
 }
 
 .contact-list a {
-  color: #ff6b6b;
+  color: #8b2929;
   text-decoration: none;
   font-weight: bold;
 }
 
 .contact-list a:hover {
   text-decoration: underline;
+  border-bottom: 2px solid #ff6b6b;
 }
 
 .contact-form {
-  background-color: white;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+.contact-form #bar
+{
+  color: #333;
+  font-weight: bold;
 }
 
 .contact-form label {
