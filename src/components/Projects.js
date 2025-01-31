@@ -81,7 +81,7 @@ const Projects = () => {
               management.
             </p>
             <a
-              href="https://github.com/umairism"
+              href="https://github.com/Umairism/Weather-App"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: 'black' }}
