@@ -6,7 +6,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_l1nri2p', 'template_o8su2rj', e.target, 'Outlook')
       .then((result) => {
           console.log(result.text);
           alert('Message sent successfully!');
@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" style={{ height: '100vh', overflowY: 'auto', position: 'relative', backgroundColor: '#0d1b2a', color: '#ffffff' }}>
+    <section id="contact" style={{ height: '100vh', overflowY: 'auto', position: 'relative', color: '#ffffff', zIndex: 0 }}>
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', width: '100%' }}>
         <h2 style={{ color: '#ffffff' }}>Contact Me</h2>
         <p style={{ color: '#ffffff' }}>

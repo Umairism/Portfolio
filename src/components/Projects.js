@@ -17,13 +17,13 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" style={{ height: '100vh', overflowY: 'auto', position: 'relative', backgroundColor: '#0d1b2a', color: '#ffffff' }}>
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', width: '100%' }}>
-        <h2 style={{ color: '#ffffff' }}>My Projects</h2>
-        <div className="projects-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-            <h3 style={{ color: '#ffffff' }}>Personal Portfolio</h3>
-            <p style={{ color: '#ffffff' }}>
+    <section id="projects" style={{ zIndex: 0 }}>
+      <div className="content">
+        <h2>My Projects</h2>
+        <div className="projects-container">
+          <div className="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
               A personal portfolio website built with React.js to showcase my
               skills, projects, and achievements. This project helped me learn how
               to structure React applications and manage routing.
@@ -32,15 +32,22 @@ const Projects = () => {
               href="https://github.com/Umairism/Interactive-Portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'black' }}
             >
               View on GitHub
             </a>
+            <a
+              href="https://memyport.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
+            </a>
           </div>
 
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-            <h3 style={{ color: '#ffffff' }}>E-Commerce Website</h3>
-            <p style={{ color: '#ffffff' }}>
+          <div className="project-card">
+            <h3>E-Commerce Website</h3>
+            <p>
               A full-stack e-commerce web application built using React.js,
               Node.js, and MongoDB. It includes features such as user authentication,
               shopping cart, and order processing.
@@ -49,15 +56,22 @@ const Projects = () => {
               href="https://github.com/Umairism"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'black' }}
             >
               View on GitHub
             </a>
+            <a
+              href="https://memyecomweb.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
+            </a>
           </div>
 
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-            <h3 style={{ color: '#ffffff' }}>Task Manager App</h3>
-            <p style={{ color: '#ffffff' }}>
+          <div className="project-card">
+            <h3>Task Manager App</h3>
+            <p>
               A task management app created to help users organize and track their
               daily tasks. Built with React.js and MongoDB, it features CRUD
               operations and user authentication.
@@ -66,27 +80,98 @@ const Projects = () => {
               href="https://github.com/umairism"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'black' }}
             >
               View on GitHub
             </a>
+            <a
+              href="https://memytaskmgr.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
+            </a>
           </div>
 
-          <div className="project-card" style={{ backgroundColor: '#1a1a1a', color: '#ffffff', padding: '20px', borderRadius: '10px', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', width: '80%', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-            <h3 style={{ color: '#ffffff' }}>Weather Forecast App</h3>
-            <p style={{ color: '#ffffff' }}>
+          <div className="project-card">
+            <h3>Weather Forecast App</h3>
+            <p>
               A weather app that fetches data from the OpenWeatherMap API. Users
               can input a location and view the weather forecast for that area.
               Built with React.js, the app demonstrates working with APIs and state
               management.
             </p>
             <a
-              href="https://github.com/umairism"
+              href="https://github.com/Umairism/Weather-App"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'black' }}
             >
               View on GitHub
+            </a>
+            <a
+              href="https://memyweather.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>Student Portal</h3>
+            <p>
+              A student portal application designed to manage student information,
+              courses, and grades. Built with React.js and Node.js, it provides a
+              user-friendly interface for students and administrators.
+            </p>
+            <a
+              href="https://github.com/Umairism"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+            <a
+              href="https://memystudentportal.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>WordPress Website</h3>
+            <p>
+              A WordPress website developed for a client to showcase their business
+              and services. It includes custom themes and plugins to meet the client's
+              specific requirements.
+            </p>
+            <a
+              href="https://memypressweb.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>Blender 3D Models</h3>
+            <p>
+              A collection of 3D models created using Blender. These models showcase
+              my skills in 3D modeling, texturing, and rendering.
+            </p>
+            <a
+              href="https://memyblender3d.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: '1rem' }}
+            >
+              View Live
             </a>
           </div>
         </div>

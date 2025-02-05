@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" style={{ height: '100vh', overflowY: 'auto', position: 'relative', backgroundColor: '#0d1b2a', color: '#ffffff' }}>
+    <section id="about" style={{ height: '120vh' , overflowY: 'auto', position: 'relative', color: '#ffffff', zIndex: 0 }}>
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', width: '100%' }}>
         <h2 style={{ color: '#ffffff' }}>About Me</h2>
         <p style={{ color: '#ffffff' }}>
