@@ -1,0 +1,21 @@
+body.dark-mode {
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #0d1b2a;
+}
+
+body.dark-mode .navbar-link {
+  color: #ffffff;
+}
+
+body.dark-mode .project-card {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .contact-form label {
+  color: #ffffff;
+}
