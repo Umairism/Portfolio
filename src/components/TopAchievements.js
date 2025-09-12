@@ -45,13 +45,13 @@ const TopAchievements = () => {
     },
     {
       id: 5,
-      title: "✨ DDOS Simulation Tool",
-      description: "A CLI-based Python application designed to simulate Distributed Denial-of-Service attacks",
-      tech: ["Python", "Scapy", "Networking"],
-      github: "https://github.com/Umairism/Dos-Tool",
-      status: "✨ Live",
-      gradient: "from-indigo-500 to-purple-600",
-      impact: "Professional showcase"
+      title: "🐧 LinuxOS Desktop Environment",
+      description: "Web-based desktop OS with vanilla JavaScript, zero dependencies",
+      tech: ["Vanilla JS", "HTML5", "CSS3", "Window Management"],
+      github: "https://github.com/umairism/linuxos-desktop",
+      status: "🆕 New | 🚀 Live",
+      gradient: "from-blue-600 to-purple-700",
+      impact: "Pure vanilla JS innovation"
     }
   ];
 

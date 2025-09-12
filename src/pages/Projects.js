@@ -17,6 +17,7 @@ import benchmarkImage from "../Images/me3.png";
 import mobileAppImage from "../Images/portal.png";
 import opencvImage from "../Images/1.png";
 import blockchainCertImage from '../Images/lockchain-cert.png';
+import linuxosDesktopImage from '../Images/LinuxOS-Desktop.png';
 
 
 const Projects = () => {
@@ -298,6 +299,21 @@ const Projects = () => {
       color: "from-yellow-500 to-orange-600",
       likes: 0,
       featured: false
+    },
+    {
+      id: 20,
+      title: "🐧 LinuxOS Desktop Environment",
+      description: "A modern, web-based desktop operating system experience built with vanilla JavaScript, HTML5, and CSS3. Features a sleek macOS-inspired interface with Linux personality and full functionality. Includes window management, dynamic wallpapers, macOS-style dock, built-in applications (Firefox browser, calculator, file manager, text editor, terminal), system preferences, and smooth animations. Zero dependencies with pure vanilla JavaScript, 60fps CSS transitions, glass morphism UI, and keyboard shortcuts support.",
+      tech: ["Vanilla JavaScript", "HTML5", "CSS3", "Window Management", "Glass Morphism", "Responsive Design", "Desktop OS", "Zero Dependencies", "Animation", "File System API"],
+      github: "https://github.com/umairism/linuxos-desktop",
+      readme: "https://github.com/umairism/linuxos-desktop/blob/main/README.md",
+      live: "https://linuxos.netlify.app",
+      image: linuxosDesktopImage,
+      color: "from-blue-600 to-purple-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Latest Project - Pure Vanilla JS Desktop OS"
     }
   ];
 

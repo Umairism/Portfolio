@@ -47,6 +47,13 @@ Modern wireless security auditing interface
 - **Technologies**: React, TypeScript, FastAPI, Security Testing
 - **Repository**: [Aircrack_GUI](https://github.com/Umairism/Aircrack_GUI)
 
+### 🐧 LinuxOS Desktop Environment
+**New Addition** | Web-based desktop operating system experience
+- **Technologies**: Vanilla JavaScript, HTML5, CSS3, Window Management
+- **Features**: macOS-style dock, built-in apps, dynamic wallpapers, glass morphism UI
+- **Repository**: [linuxos-desktop](https://github.com/umairism/linuxos-desktop)
+- **Innovation**: Zero dependencies, pure vanilla JS desktop environment
+
 ## 🏗️ Architecture & Features
 
 ### Core Sections
