@@ -125,7 +125,7 @@ const techStack = {
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Umairism/Interactive-Portfolio.git
+   git clone https://github.com/Umairism/Portfolio.git
    cd Interactive-Portfolio
    ```
 
