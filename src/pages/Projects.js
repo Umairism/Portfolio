@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // Import project images
-import codespaceImage from "../Images/codespace.png"; // Temporary placeholder - replace with actual CodeSpace screenshot
+import codespaceImage from "../Images/CodeSpace.png";
 import portfolioImage from "../Images/1.png";
 import ecommerceImage from "../Images/Ecom.png";
 import slimeTubeImage from "../Images/SlimeTube.png";
