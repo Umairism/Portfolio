@@ -5,6 +5,17 @@ const TopAchievements = () => {
   const achievements = [
     {
       id: 1,
+      title: "🚀 CodeSpace - Professional Browser IDE",
+      description: "Advanced web-based development environment with real Python/JS execution",
+      tech: ["React", "TypeScript", "Monaco", "Python Interpreter"],
+      github: "https://github.com/Umairism/codespace",
+      live: "https://webcodespace.netlify.app",
+      status: "🔥 Latest & Featured",
+      gradient: "from-blue-500 to-purple-600",
+      impact: "Full IDE in browser, zero setup"
+    },
+    {
+      id: 2,
       title: "🎓 Blockchain Certificate System",
       description: "Enterprise-grade blockchain verification platform",
       tech: ["React", "TypeScript", "Flask", "Blockchain"],
@@ -14,7 +25,7 @@ const TopAchievements = () => {
       impact: "Eliminates certificate fraud"
     },
     {
-      id: 2,
+      id: 3,
       title: "🤖 Portable AI Agent",
       description: "Privacy-first offline AI assistant with self-learning",
       tech: ["Python", "AI/ML", "PyTorch", "Local Storage"],
@@ -24,7 +35,7 @@ const TopAchievements = () => {
       impact: "100% privacy protection"
     },
     {
-      id: 3,
+      id: 4,
       title: "🔐 Aircrack-NG GUI",
       description: "Modern wireless security auditing interface",
       tech: ["React", "TypeScript", "FastAPI", "Security"],
@@ -32,16 +43,6 @@ const TopAchievements = () => {
       status: "⚡ Advanced",
       gradient: "from-red-500 to-orange-600",
       impact: "Enterprise security testing"
-    },
-    {
-      id: 4,
-      title: "🛒 ModernShop Platform",
-      description: "Full-stack e-commerce with serverless backend",
-      tech: ["React", "Node.js", "Serverless", "API"],
-      github: "https://github.com/Umairism/e-commerce",
-      status: "🚀 Deployed",
-      gradient: "from-blue-500 to-cyan-600",
-      impact: "Scalable architecture"
     },
     {
       id: 5,

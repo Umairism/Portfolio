@@ -1,6 +1,21 @@
 # 🌟 **Portfolio Website**
 
-<div align="center">
+### 🚀 Featured Projects
+
+### 🚀 CodeSpace - Professional Browser IDE
+**Latest Achievement** | Complete development environment in your browser
+- **Technologies**: React 18, TypeScript, Monaco Editor, Python Interpreter, Vite
+- **Features**: Real code execution, IntelliSense, live preview, file management, project templates
+- **Repository**: [codespace](https://github.com/Umairism/codespace)
+- **Live Demo**: [webcodespace.netlify.app](https://webcodespace.netlify.app)
+- **Impact**: Zero-setup professional IDE with full VS Code functionality in browser
+
+### 🎓 Blockchain Certificate Verification System
+**Enterprise Achievement** | Enterprise-grade blockchain verification platform
+- **Technologies**: React, TypeScript, Flask, Python, Custom Blockchain
+- **Features**: JWT Authentication, SHA-256 Blockchain, Certificate Management
+- **Repository**: [blockchain-certificate-verification](https://github.com/Umairism/blockchain-certificate-verification)
+- **Impact**: Eliminates certificate fraud through immutable blockchain verificationgn="center">
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=vercel)](https://memyport.netlify.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Umairism/Interactive-Portfolio)
@@ -15,7 +30,7 @@
 
 ## 🎯 Project Overview
 
-This interactive portfolio represents more than just a personal website—it's a comprehensive showcase of my journey as a full-stack developer and blockchain innovator. Built with modern web technologies and design principles, it demonstrates my ability to create engaging, user-centric digital experiences and enterprise-grade applications.
+This interactive portfolio showcases my journey as a full-stack developer and innovative technologist. From building CodeSpace - a complete browser-based IDE that rivals desktop development environments - to enterprise blockchain solutions, each project demonstrates my ability to create cutting-edge, user-centric digital experiences that solve real-world problems.
 
 ### ✨ Key Highlights
 
@@ -159,31 +174,38 @@ This portfolio showcases a diverse range of projects demonstrating various techn
 
 ### 🏆 Highlighted Projects
 
-#### 1. **ModernShop E-Commerce Platform**
+#### 1. **🚀 CodeSpace - Professional Browser IDE**
+*The most advanced web-based development environment that runs entirely in your browser*
+- **Tech Stack**: React 18, TypeScript, Monaco Editor, Python Interpreter, Vite, Tailwind CSS, Babel
+- **Features**: Real Python/JS execution, IntelliSense, live preview, file management, project templates, VS Code-style Markdown rendering
+- **🔗 Links**: [GitHub](https://github.com/Umairism/codespace) | [Live Demo](https://webcodespace.netlify.app)
+- **🏆 Achievement**: Complete professional IDE with zero setup - full VS Code experience in browser
+
+#### 2. **ModernShop E-Commerce Platform**
 *Complete full-stack e-commerce application with serverless architecture*
 - **Tech Stack**: React.js, Netlify Functions, Node.js, Serverless API
 - **Features**: Product catalog, shopping cart, search & filtering, session management, responsive design
 - **🔗 Links**: [GitHub](https://github.com/Umairism/e-commerce) | [Live Demo](https://myecoms.netlify.app)
 
-#### 2. **Task Management System**
+#### 3. **Task Management System**
 *Productivity application with real-time collaboration*
 - **Tech Stack**: React.js, MongoDB, Socket.io, JWT Authentication
 - **Features**: CRUD operations, real-time updates, user management, responsive design
 - **🔗 Links**: [GitHub](https://github.com/Umairism/task-manager) | [Live Demo](https://memytaskmgr.netlify.app)
 
-#### 3. **Weather Forecast Application**
+#### 4. **Weather Forecast Application**
 *API-integrated weather application with geolocation*
 - **Tech Stack**: React.js, OpenWeatherMap API, Geolocation API
 - **Features**: Real-time weather data, location detection, 5-day forecast, responsive UI
 - **🔗 Links**: [GitHub](https://github.com/Umairism/Weather-App) | [Live Demo](https://memyweather.netlify.app)
 
-#### 4. **Surveillance Drone System**
+#### 5. **Surveillance Drone System**
 *Advanced IoT project with computer vision capabilities*
 - **Tech Stack**: Python, OpenCV, Flask, DroneKit, WebRTC
 - **Features**: Real-time video streaming, GPS tracking, automated flight paths
 - **🔗 Links**: [GitHub](https://github.com/Umairism/Drone-System) | [Documentation](https://github.com/Umairism/Drone-System/blob/main/README.md)
 
-#### 5. **Medical Store Management**
+#### 6. **Medical Store Management**
 *Healthcare inventory management system*
 - **Tech Stack**: React.js, TypeScript, Tailwind CSS, React Router
 - **Features**: Inventory tracking, sales management, reporting dashboard

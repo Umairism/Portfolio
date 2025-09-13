@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 // Import project images
+import codespaceImage from "../Images/codespace.png"; // Temporary placeholder - replace with actual CodeSpace screenshot
 import portfolioImage from "../Images/1.png";
 import ecommerceImage from "../Images/Ecom.png";
 import slimeTubeImage from "../Images/SlimeTube.png";
@@ -58,6 +59,21 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "🚀 CodeSpace - Professional Browser IDE",
+      description: "The most advanced web-based development environment that transforms your browser into a professional IDE. Features comprehensive Python interpreter with full language support (variables, loops, functions, classes), Monaco Editor (VS Code engine) with IntelliSense, real-time code execution, live preview system for HTML/CSS/React/Markdown, file management with upload/download, project templates, and VS Code-style Markdown rendering. Zero installation required - full IDE functionality in your browser with enterprise-grade features.",
+      tech: ["React.js", "TypeScript", "Monaco Editor", "Python Interpreter", "Vite", "Tailwind CSS", "Babel", "JSX Transpilation", "Markdown Parser", "File System API", "WebWorkers"],
+      github: "https://github.com/Umairism/codespace",
+      readme: "https://github.com/Umairism/codespace/blob/main/README.md",
+      live: "https://webcodespace.netlify.app", 
+      image: codespaceImage,
+      color: "from-blue-500 to-purple-600",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Latest Achievement - Complete Browser-Based IDE"
+    },
+    {
+      id: 2,
       title: "🎓 Blockchain Certificate Verification System",
       description: "A comprehensive, enterprise-grade blockchain-based academic certificate verification platform. Features React TypeScript frontend, Flask backend, custom SHA-256 blockchain implementation, JWT authentication, role-based access control, real-time verification, and professional documentation. Eliminates certificate fraud through immutable blockchain storage.",
       tech: ["React.js", "TypeScript", "Flask", "Python", "SQLAlchemy", "Blockchain", "SHA-256", "JWT Auth", "SQLite", "Tailwind CSS", "Vite", "Docker"],
@@ -72,7 +88,7 @@ const Projects = () => {
       achievement: "🏆 Latest Achievement - Full-Stack Blockchain Application"
     },
     {
-      id: 2,
+      id: 3,
       title: "Personal Portfolio",
       description: "A personal portfolio website built with React.js to showcase my skills, projects, and achievements. This project helped me learn how to structure React applications and manage routing.",
       tech: ["React.js", "CSS3", "JavaScript"],
@@ -83,7 +99,7 @@ const Projects = () => {
       color: "from-blue-500 to-purple-600"
     },
     {
-      id: 3,
+      id: 4,
       title: "Portable AI Agent",
       description: "A **self-contained, offline-capable AI agent** with self-learning capabilities designed for personal use. Your privacy-first AI assistant that learns from every interaction while keeping all data completely local.",
       tech: ["Python", "AI", "Machine Learning", "Local Storage", "Self-learning", "Offline Capable", "Privacy-first", "PyTorch", "Transformers", "Flask", "HTML", "CSS", "JavaScript"],
@@ -96,7 +112,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 4,
+      id: 5,
       title: "Aircrack-NG GUI - Wireless Security Auditing Tool",
       description: "A modern, enterprise-grade web interface for wireless security auditing using Aircrack-NG. Features a React/TypeScript frontend with Material-UI design and FastAPI backend. Includes user authentication, file upload with drag & drop, job management, real-time dashboard, and comprehensive wireless penetration testing capabilities.",
       tech: ["React.js", "TypeScript", "Material-UI", "FastAPI", "Python", "SQLAlchemy", "JWT Authentication", "Redux Toolkit", "Aircrack-NG", "Cybersecurity"],
@@ -109,7 +125,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 5,
+      id: 6,
       title: "ModernShop E-Commerce Platform",
       description: "A complete full-stack e-commerce platform with React frontend and serverless backend. Features product catalog, shopping cart, search & filtering, responsive design, and session-based cart persistence. Deployed with Netlify Functions for scalable serverless architecture.",
       tech: ["React.js", "Netlify Functions", "Node.js", "Serverless API"],
@@ -122,7 +138,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 5,
+      id: 7,
       title: "SlimeTube - Video Streaming Platform",
       description: "A modern, full-featured video streaming platform that provides YouTube-like functionality with a clean, responsive interface. Built with React 18, TypeScript, and modern web technologies. Features video upload, playback, user management, IndexedDB storage, wishlist functionality, and comprehensive testing suite.",
       tech: ["React.js", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "IndexedDB"],
