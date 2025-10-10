@@ -1,384 +1,220 @@
-# 🌟 **Portfolio Website**
+# Portfolio Website
 
-### 🚀 Featured Projects
+A modern, responsive portfolio website showcasing full-stack development skills and innovative projects across web development, cybersecurity, blockchain, AI/ML, and mobile applications.
 
-### 🚀 CodeSpace - Professional Browser IDE
-**Latest Achievement** | Complete development environment in your browser
+**Live Demo**: [View Live](https://umairhakeem.netlify.app)  
+**Repository**: [GitHub](https://github.com/Umairism/Interactive-Portfolio)
+
+## Overview
+
+This portfolio demonstrates my expertise in full-stack development through 32 diverse projects. From browser-based IDEs to blockchain verification systems, each project represents a solution to real-world challenges using modern technologies.
+
+## Featured Projects
+
+### CodeSpace - Professional Browser IDE
+Complete development environment running entirely in the browser with zero setup required.
 - **Technologies**: React 18, TypeScript, Monaco Editor, Python Interpreter, Vite
-- **Features**: Real code execution, IntelliSense, live preview, file management, project templates
+- **Features**: Real-time code execution, IntelliSense, live preview, file management, project templates
 - **Repository**: [codespace](https://github.com/Umairism/codespace)
 - **Live Demo**: [webcodespace.netlify.app](https://webcodespace.netlify.app)
-- **Impact**: Zero-setup professional IDE with full VS Code functionality in browser
 
-### 🎓 Blockchain Certificate Verification System
-**Enterprise Achievement** | Enterprise-grade blockchain verification platform
-- **Technologies**: React, TypeScript, Flask, Python, Custom Blockchain
-- **Features**: JWT Authentication, SHA-256 Blockchain, Certificate Management
+### Blockchain Certificate Verification System
+Enterprise-grade platform for academic certificate verification using custom blockchain implementation.
+- **Technologies**: React, TypeScript, Flask, Python, Custom Blockchain, JWT Authentication
+- **Features**: Immutable certificate storage, SHA-256 blockchain, role-based access control
 - **Repository**: [blockchain-certificate-verification](https://github.com/Umairism/blockchain-certificate-verification)
-- **Impact**: Eliminates certificate fraud through immutable blockchain verificationgn="center">
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=vercel)](https://memyport.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Umairism/Interactive-Portfolio)
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-*A modern, responsive portfolio website showcasing full-stack development skills and innovative blockchain projects*
-
-![Portfolio Preview](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Portfolio+Preview)
-
-</div>
-
-## 🎯 Project Overview
-
-This interactive portfolio showcases my journey as a full-stack developer and innovative technologist. From building CodeSpace - a complete browser-based IDE that rivals desktop development environments - to enterprise blockchain solutions, each project demonstrates my ability to create cutting-edge, user-centric digital experiences that solve real-world problems.
-
-### ✨ Key Highlights
-
-- **🎨 Modern Design**: Clean, professional interface with smooth animations and transitions
-- **📱 Fully Responsive**: Seamless experience across all devices and screen sizes
-- **⚡ Performance Optimized**: Fast loading times with optimized assets and code splitting
-- **🔧 Interactive Elements**: Dynamic project filtering, skill showcases, and contact forms
-- **🌐 SEO Friendly**: Optimized for search engines with proper meta tags and structure
-- **♿ Accessible**: Built following WCAG guidelines for inclusive user experience
-- **🏆 Achievement Showcase**: Dedicated section highlighting top projects including blockchain systems
-- **🎓 Blockchain Portfolio**: Featured blockchain certificate verification system
-
-## 🚀 Featured Projects
-
-### 🎓 Blockchain Certificate Verification System
-**Latest Achievement** | Enterprise-grade blockchain verification platform
-- **Technologies**: React, TypeScript, Flask, Python, Custom Blockchain
-- **Features**: JWT Authentication, SHA-256 Blockchain, Certificate Management
-- **Repository**: [blockchain-certificate-verification](https://github.com/Umairism/blockchain-certificate-verification)
-- **Impact**: Eliminates certificate fraud through immutable blockchain verification
-
-### 🤖 Portable AI Agent
-Privacy-first offline AI assistant with self-learning capabilities
-- **Technologies**: Python, AI/ML, PyTorch, Local Storage
-- **Repository**: [Portable-AI-Agent](https://github.com/Umairism/Porable-Ai-Agent)
-
-### 🔐 Aircrack-NG GUI
-Modern wireless security auditing interface
-- **Technologies**: React, TypeScript, FastAPI, Security Testing
-- **Repository**: [Aircrack_GUI](https://github.com/Umairism/Aircrack_GUI)
-
-### 🐧 LinuxOS Desktop Environment
-**New Addition** | Web-based desktop operating system experience
-- **Technologies**: Vanilla JavaScript, HTML5, CSS3, Window Management
-- **Features**: macOS-style dock, built-in apps, dynamic wallpapers, glass morphism UI
+### LinuxOS Desktop Environment
+Web-based desktop operating system with macOS-inspired interface and full functionality.
+- **Technologies**: Vanilla JavaScript, HTML5, CSS3, Window Management APIs
+- **Features**: Application dock, built-in apps (browser, calculator, terminal), dynamic wallpapers
 - **Repository**: [linuxos-desktop](https://github.com/umairism/linuxos-desktop)
-- **Innovation**: Zero dependencies, pure vanilla JS desktop environment
+- **Live Demo**: [linuxos.netlify.app](https://linuxos.netlify.app)
 
-## 🏗️ Architecture & Features
+## Project Categories
 
-### Core Sections
+The portfolio includes projects across multiple domains:
 
-| Section | Purpose | Features |
-|---------|---------|----------|
-| **🏠 Home** | First impression & introduction | Hero section, animated text, achievement showcase |
-| **🏆 Achievements** | Top projects spotlight | Featured blockchain system, 5-column project grid |
-| **👨‍💻 About** | Professional background | Skills timeline, education, certifications |
-| **🚀 Projects** | Complete portfolio showcase | Interactive project cards, technology filters, live demos |
-| **🛠️ Skills** | Technical expertise | Expandable skill cards, proficiency indicators |
-| **📞 Contact** | Professional networking | Contact form, social links, downloadable resume |
+- **Web Development** (6 projects): Full-stack applications, e-commerce platforms, task management systems
+- **Cybersecurity** (3 projects): Penetration testing frameworks, wireless security tools, DDoS simulation
+- **AI & Machine Learning** (3 projects): Computer vision systems, portable AI agents, drone surveillance
+- **Blockchain** (2 projects): Certificate verification systems, custom blockchain implementations
+- **Educational** (4 projects): School management systems, student portals, teacher platforms
+- **Mobile & Cross-Platform** (2 projects): React Native applications, payment simulation demos
+- **3D & Graphics** (2 projects): Three.js experiences, interactive proposals, mathematical animations
+- **Business & Productivity** (4 projects): Inventory management, medical store systems, outsourcing platforms
+- **Media & Entertainment** (3 projects): Video streaming platforms, music recognition apps, celebration websites
+- **Desktop Applications** (2 projects): USB security tools, Python demonstration projects
 
-### Technical Implementation
-
-- **Component Architecture**: Modular React components with reusable design patterns
-- **State Management**: Efficient state handling with React Hooks
-- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
-- **Performance**: Lazy loading, image optimization, and code splitting
-- **SEO**: Dynamic meta tags and structured data markup
-- **Achievement System**: Dynamic project highlighting with gradient cards and animations
-
-## 🛠️ Technology Stack
+## Technical Stack
 
 ### Frontend Development
 ```javascript
-const techStack = {
-  core: ['React 18.2.0', 'JavaScript ES6+', 'HTML5', 'CSS3'],
+const technologies = {
+  core: ['React 18.2.0', 'JavaScript ES6+', 'TypeScript', 'HTML5', 'CSS3'],
   styling: ['Tailwind CSS', 'CSS Modules', 'Responsive Design'],
-  build: ['Create React App', 'Webpack', 'Babel'],
-  deployment: ['Netlify', 'Git', 'GitHub Actions']
+  frameworks: ['React.js', 'Next.js', 'Three.js'],
+  backend: ['Node.js', 'Python', 'Flask', 'FastAPI'],
+  databases: ['MongoDB', 'SQLite', 'Supabase'],
+  blockchain: ['Custom Implementation', 'SHA-256', 'Cryptography'],
+  mobile: ['React Native', 'Cross-Platform Development'],
+  tools: ['Git', 'Docker', 'Vite', 'Webpack'],
+  deployment: ['Netlify', 'GitHub Actions', 'Vercel']
 };
 ```
 
-### Backend Integration
-- **Node.js**: Server-side development and API integration
-- **MongoDB**: Database for contact form submissions and analytics
-- **RESTful APIs**: Integration with external services and data sources
+### Architecture Features
+- **Component-based Design**: Modular React components with reusable patterns
+- **Responsive Layout**: Mobile-first approach supporting all screen sizes
+- **Performance Optimization**: Code splitting, lazy loading, image optimization
+- **Category Filtering**: Dynamic project organization by technology and domain
+- **Interactive Elements**: Smooth animations, hover effects, project showcases
 
-### Development Tools
-- **Version Control**: Git, GitHub
-- **Code Quality**: ESLint, Prettier, Husky
-- **Testing**: Jest, React Testing Library
-- **Performance**: Lighthouse, Web Vitals monitoring
-
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
-- Node.js (v16.0.0 or higher)
+- Node.js (version 16.0.0 or higher)
 - npm or yarn package manager
-- Git for version control
 
 ### Installation
 
-1. **Clone the repository**
+1. Clone the repository:
    ```bash
    git clone https://github.com/Umairism/Portfolio.git
-   cd Interactive-Portfolio
+   cd Portfolio
    ```
 
-2. **Install dependencies**
+2. Install dependencies:
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Environment Setup**
-   ```bash
-   # Create environment file
-   cp .env.example .env.local
-   
-   # Add your environment variables
-   REACT_APP_EMAIL_SERVICE_ID=your_service_id
-   REACT_APP_EMAIL_TEMPLATE_ID=your_template_id
-   REACT_APP_EMAIL_PUBLIC_KEY=your_public_key
-   ```
-
-4. **Start development server**
+3. Start the development server:
    ```bash
    npm start
-   # or
-   yarn start
    ```
 
-5. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+4. Open your browser and navigate to `http://localhost:3000`
 
 ### Build for Production
 
 ```bash
-# Create optimized production build
 npm run build
-
-# Serve locally to test production build
-npm run serve
 ```
 
+This creates an optimized production build in the `build` folder, ready for deployment to any static hosting service.
 
-## 🎨 Featured Projects
 
-This portfolio showcases a diverse range of projects demonstrating various technical skills and problem-solving approaches:
+## Key Projects
 
-### 🏆 Highlighted Projects
+### Web Development
 
-#### 1. **🚀 CodeSpace - Professional Browser IDE**
-*The most advanced web-based development environment that runs entirely in your browser*
-- **Tech Stack**: React 18, TypeScript, Monaco Editor, Python Interpreter, Vite, Tailwind CSS, Babel
-- **Features**: Real Python/JS execution, IntelliSense, live preview, file management, project templates, VS Code-style Markdown rendering
-- **🔗 Links**: [GitHub](https://github.com/Umairism/codespace) | [Live Demo](https://webcodespace.netlify.app)
-- **🏆 Achievement**: Complete professional IDE with zero setup - full VS Code experience in browser
+**ModernShop E-Commerce Platform**
+Complete full-stack e-commerce solution with serverless backend architecture.
+- Technologies: React.js, Netlify Functions, Node.js, Serverless API
+- Features: Product catalog, shopping cart, search functionality, session management
+- Links: [GitHub](https://github.com/Umairism/e-commerce) | [Live Demo](https://myecoms.netlify.app)
 
-#### 2. **ModernShop E-Commerce Platform**
-*Complete full-stack e-commerce application with serverless architecture*
-- **Tech Stack**: React.js, Netlify Functions, Node.js, Serverless API
-- **Features**: Product catalog, shopping cart, search & filtering, session management, responsive design
-- **🔗 Links**: [GitHub](https://github.com/Umairism/e-commerce) | [Live Demo](https://myecoms.netlify.app)
+**Task Management System**
+Productivity application with real-time collaboration capabilities.
+- Technologies: React.js, MongoDB, Socket.io, JWT Authentication
+- Features: CRUD operations, real-time updates, user authentication, responsive design
+- Links: [GitHub](https://github.com/Umairism/task-manager) | [Live Demo](https://memytaskmgr.netlify.app)
 
-#### 3. **Task Management System**
-*Productivity application with real-time collaboration*
-- **Tech Stack**: React.js, MongoDB, Socket.io, JWT Authentication
-- **Features**: CRUD operations, real-time updates, user management, responsive design
-- **🔗 Links**: [GitHub](https://github.com/Umairism/task-manager) | [Live Demo](https://memytaskmgr.netlify.app)
+**Weather Forecast Application**
+API-integrated weather application with geolocation support.
+- Technologies: React.js, OpenWeatherMap API, Geolocation API
+- Features: Real-time weather data, location detection, 5-day forecast
+- Links: [GitHub](https://github.com/Umairism/Weather-App) | [Live Demo](https://memyweather.netlify.app)
 
-#### 4. **Weather Forecast Application**
-*API-integrated weather application with geolocation*
-- **Tech Stack**: React.js, OpenWeatherMap API, Geolocation API
-- **Features**: Real-time weather data, location detection, 5-day forecast, responsive UI
-- **🔗 Links**: [GitHub](https://github.com/Umairism/Weather-App) | [Live Demo](https://memyweather.netlify.app)
+### Cybersecurity
 
-#### 5. **Surveillance Drone System**
-*Advanced IoT project with computer vision capabilities*
-- **Tech Stack**: Python, OpenCV, Flask, DroneKit, WebRTC
-- **Features**: Real-time video streaming, GPS tracking, automated flight paths
-- **🔗 Links**: [GitHub](https://github.com/Umairism/Drone-System) | [Documentation](https://github.com/Umairism/Drone-System/blob/main/README.md)
+**Advanced Penetration Testing Framework**
+Professional-grade security testing tool with modern GUI interface.
+- Technologies: Python, Scapy, Tkinter, Multi-threading, Cryptography
+- Features: Network scanning, vulnerability assessment, payload generation, professional reporting
+- Repository: [GitHub](https://github.com/Umairism/advanced-pentest-framework)
 
-#### 6. **Medical Store Management**
-*Healthcare inventory management system*
-- **Tech Stack**: React.js, TypeScript, Tailwind CSS, React Router
-- **Features**: Inventory tracking, sales management, reporting dashboard
-- **🔗 Links**: [GitHub](https://github.com/Umairism/Medical-Store-Management-System) | [Live Demo](https://memymedi.netlify.app)
+**Aircrack-NG GUI**
+Modern web interface for wireless security auditing using Aircrack-NG.
+- Technologies: React, TypeScript, Material-UI, FastAPI, SQLAlchemy
+- Features: User authentication, file upload, job management, real-time dashboard
+- Repository: [GitHub](https://github.com/Umairism/Aircrack_GUI)
 
-### 🌟 Additional Projects
+### AI & Machine Learning
 
-- **Student Portal**: Educational management system ([GitHub](https://github.com/Umairism/student-portal) | [Live](https://memystudentportal.netlify.app))
-- **DDoS Simulation Tool**: Educational cybersecurity tool ([GitHub](https://github.com/Umairism/Dos-Tool))
-- **WordPress Solutions**: Custom client websites ([Adobe Studios](https://adobestudios.io) | [Doppe Store](https://doppe.store))
+**Portable AI Agent**
+Self-contained, offline-capable AI assistant with privacy-first design.
+- Technologies: Python, PyTorch, Transformers, Machine Learning, Local Storage
+- Features: Self-learning capabilities, offline operation, privacy protection
+- Repository: [GitHub](https://github.com/Umairism/Porable-Ai-Agent)
 
-## 📊 Performance Metrics
+**Surveillance Drone System**
+Advanced IoT project with computer vision and real-time streaming capabilities.
+- Technologies: Python, OpenCV, Flask, DroneKit, WebRTC, GPS
+- Features: Real-time video streaming, GPS tracking, automated flight paths
+- Repository: [GitHub](https://github.com/Umairism/Drone-System)
 
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-- **Page Load Time**: < 2 seconds on 3G networks
-- **Core Web Vitals**: All metrics in green zone
-- **Mobile Responsiveness**: 100% compatible across devices
+### Additional Notable Projects
 
-## 🔧 Development Workflow
+- **Student Portal**: Educational management system for course and grade tracking
+- **Medical Store Management**: Healthcare inventory system with comprehensive reporting
+- **SlimeTube**: Video streaming platform with modern UI and user management
 
-### Code Quality Standards
-- **ESLint**: Strict linting rules for consistent code style
-- **Prettier**: Automated code formatting
-- **Husky**: Pre-commit hooks for quality assurance
-- **Conventional Commits**: Structured commit messages
+## Performance
 
-### Testing Strategy
+The portfolio is optimized for performance and accessibility:
+- Lighthouse scores consistently above 95 for Performance, Accessibility, Best Practices, and SEO
+- Page load times under 2 seconds on 3G networks
+- Mobile-responsive design supporting all screen sizes
+- Core Web Vitals metrics in the green zone
+
+## Development
+
+### Code Quality
+- ESLint for consistent code style and error detection
+- Prettier for automated code formatting
+- Modern JavaScript (ES6+) features throughout
+- Component-based architecture for maintainability
+
+### Available Scripts
+
+**Development**
 ```bash
-# Run all tests
-npm test
-
-# Run tests with coverage
-npm test -- --coverage
-
-# Run tests in watch mode
-npm test -- --watch
+npm start          # Start development server
+npm test           # Run test suite
+npm run build      # Create production build
+npm run eject      # Eject from Create React App (irreversible)
 ```
 
-### Deployment Pipeline
-1. **Development**: Local development with hot reload
-2. **Staging**: Automated deployment to staging environment
-3. **Production**: Optimized build deployed to Netlify
-4. **Monitoring**: Performance tracking and error monitoring
+## Contributing
 
-## 📈 Project Statistics
+While this is a personal portfolio, feedback and suggestions are welcome. If you'd like to contribute:
 
-<div align="center">
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -m 'Add improvement'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Umairism&show_icons=true&theme=dark&hide_border=true)
+## License
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Umairism&layout=compact&theme=dark&hide_border=true)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-</div>
+## Contact
 
-## 🤝 Contributing
+**Umair Hakim**
+- Email: [Contact](mailto:malikumairhakim@outlook.com)
+- LinkedIn: [linkedin](https://www.linkedin.com/in/umairsim/)
+- GitHub: [Github](https://github.com/Umairism)
+- Portfolio: [View](https://umairhakeem.netlify.app)
 
-While this is a personal portfolio project, I welcome feedback, suggestions, and discussions about the codebase. If you'd like to contribute:
+## Professional Services
 
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
-
-### 🐛 Bug Reports
-
-If you find any bugs or issues, please:
-- Check existing issues first
-- Create a detailed bug report with steps to reproduce
-- Include screenshots if applicable
-- Mention your browser and OS version
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Umair Hakim
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-[Full license text...]
-```
-
-## 📞 Let's Connect
-
-I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and development.
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Email-outlook-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:malikumairhakim@outlook.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/umairsim/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=firefox&logoColor=white)](https://memyport.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Umairism)
-
-</div>
-
-### 💼 Professional Services
-
-- **Full-Stack Development**: Custom web applications and APIs
-- **Frontend Development**: React.js, Vue.js, modern JavaScript
-- **Backend Development**: Node.js, Python, database design
-- **WordPress Development**: Custom themes and plugins
-- **Consultation**: Technical architecture and code reviews
-
----
-
-## 📚 Additional Resources
-
-<details>
-<summary><strong>📖 Available Scripts (Click to expand)</strong></summary>
-
-### 🚀 `npm start`
-Runs the app in development mode with hot reload enabled.
-- Opens [http://localhost:3000](http://localhost:3000) in your browser
-- Automatically reloads when you make changes
-- Displays lint errors in the console
-
-### 🧪 `npm test`
-Launches the test runner in interactive watch mode.
-- Runs all test suites
-- Watches for file changes and re-runs tests
-- Displays coverage reports when configured
-
-### 🏗️ `npm run build`
-Builds the app for production to the `build` folder.
-- Optimizes React in production mode
-- Minifies files and includes hash names
-- Ready for deployment to any static hosting
-
-### ⚙️ `npm run eject`
-**⚠️ Warning: This is a one-way operation!**
-- Removes the single build dependency from your project
-- Copies all configuration files for full control
-- Use only if you need advanced customization
-
-</details>
-
-<details>
-<summary><strong>🔗 Useful Links</strong></summary>
-
-### Learning Resources
-- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
-- [React Documentation](https://reactjs.org/)
-- [Modern JavaScript Guide](https://javascript.info/)
-
-### Development Tools
-- [React Developer Tools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html)
-- [VS Code React Extensions](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
-- [Chrome DevTools Guide](https://developers.google.com/web/tools/chrome-devtools)
-
-### Performance & SEO
-- [Web.dev Performance Guide](https://web.dev/performance/)
-- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
-- [Core Web Vitals](https://web.dev/vitals/)
-
-</details>
-
----
-
-<div align="center">
-
-**⭐ If you found this project helpful, please consider giving it a star!**
-
-*Last updated: July 2025*
-
-**Made with ❤️ by [Umair Hakim](https://github.com/Umairism)**
-
-</div>
+Available for freelance and contract work:
+- Full-stack web development
+- React.js and modern frontend development
+- Python backend development and APIs
+- Blockchain and cryptocurrency projects
+- Cybersecurity tools and applications
+- Technical consultation and code reviews
