@@ -11,7 +11,7 @@ const Home = () => {
           <div className="home-content">
             <div className="profile-section">
               <img
-                src={require('../Images/me3.png')}
+                src={require('../Images/ULP.png')}
                 alt="Muhammad Umair Hakeem"
                 className="profile-image"
               />
