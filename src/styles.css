@@ -19,3 +19,83 @@ body.dark-mode .project-card {
 body.dark-mode .contact-form label {
   color: #ffffff;
 }
+
+/* Category Filter Styles */
+.category-filter {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.filter-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border: 2px solid #e0e0e0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #333;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Dark mode styles for category filter */
+body.dark-mode .filter-title {
+  color: #ffffff;
+}
+
+body.dark-mode .category-btn {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+  color: #ffffff;
+  border-color: #444;
+}
+
+body.dark-mode .category-btn:hover {
+  border-color: #007bff;
+}
+
+body.dark-mode .category-btn.active {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-color: #007bff;
+}
+
+/* Responsive design for category buttons */
+@media (max-width: 768px) {
+  .category-buttons {
+    gap: 8px;
+  }
+  
+  .category-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

@@ -153,10 +153,13 @@ body::before {
 }
 
 .intro-text {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .key-highlights {
@@ -1303,27 +1306,54 @@ p {
     padding: 3rem 1rem;
   }
   
+  .home-page {
+    padding: 1.5rem;
+  }
+  
   .home-content {
-    gap: 2rem;
+    gap: 2.5rem;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .name-title {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+  }
+  
+  .role-subtitle {
+    font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.65;
   }
   
   .key-highlights {
-    gap: 1rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
   }
   
   .highlight-item {
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.95rem;
+    flex: 1 1 calc(50% - 0.625rem);
+    min-width: 200px;
   }
   
   .cta-buttons {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
   }
   
   .btn-primary,
   .btn-secondary {
-    width: 100%;
+    flex: 1;
+    max-width: 200px;
     justify-content: center;
   }
   
@@ -1398,24 +1428,56 @@ p {
     font-size: 0.85rem;
   }
   
+  .home-page {
+    padding: 1rem;
+    min-height: calc(100vh - 60px);
+  }
+  
   .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
   
   .home-content {
     gap: 1.5rem;
   }
   
+  .name-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  
+  .role-subtitle {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
   .key-highlights {
     flex-direction: column;
     align-items: center;
+    gap: 0.75rem;
   }
   
   .highlight-item {
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
     justify-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .cta-buttons {
+    gap: 0.75rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
   }
   
   .about-section-item {
@@ -1426,7 +1488,63 @@ p {
     padding: 0.625rem 1.5rem;
     font-size: 0.9rem;
   }
+}
+
+/* Extra small screens (320px - 360px) */
+@media (max-width: 360px) {
+  .home-page {
+    padding: 0.75rem;
+  }
   
+  .home-content {
+    gap: 1.25rem;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .name-title {
+    font-size: clamp(1.8rem, 10vw, 2.2rem);
+    line-height: 1.1;
+  }
+  
+  .role-subtitle {
+    font-size: clamp(0.9rem, 5vw, 1.1rem);
+  }
+  
+  .intro-text {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .key-highlights {
+    gap: 0.5rem;
+  }
+  
+  .highlight-item {
+    max-width: 260px;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.85rem;
+    min-height: 44px; /* Accessibility: minimum touch target */
+  }
+  
+  .highlight-icon {
+    font-size: 1.25rem;
+  }
+  
+  .cta-buttons {
+    gap: 0.625rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    min-height: 44px; /* Accessibility: minimum touch target */
+  }
+
   .project-card {
     padding: 1rem;
   }
@@ -1502,7 +1620,34 @@ p {
   }
 }
 
+/* Medium screens (769px - 1199px) - Tablet Landscape */
 @media (min-width: 769px) and (max-width: 1199px) {
+  .home-page {
+    padding: 2rem 1.5rem;
+  }
+  
+  .home-content {
+    gap: 2.75rem;
+  }
+  
+  .profile-image {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .key-highlights {
+    gap: 1.5rem;
+  }
+  
+  .highlight-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    min-width: 180px;
+  }
+  
+  .cta-buttons {
+    gap: 1.25rem;
+  }
+  
   .projects-container-wrapper {
     max-width: 1000px;
     padding: 0 2rem;

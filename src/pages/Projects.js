@@ -19,11 +19,33 @@ import mobileAppImage from "../Images/portal.png";
 import opencvImage from "../Images/1.png";
 import blockchainCertImage from '../Images/lockchain-cert.png';
 import linuxosDesktopImage from '../Images/LinuxOS-Desktop.png';
+import proposalImage from '../Images/Proposal.png';
+import birthdayImage from '../Images/me3.png';
+import usbForgeImage from '../Images/Ddos.png';
+import blockchainCertSystemImage from '../Images/lockchain-cert.png';
+import outsourceAcceleratorImage from '../Images/Ecom.png';
+import teachersClubImage from '../Images/portal.png';
+import pythonMightImage from '../Images/1.png';
 
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [projectLikes, setProjectLikes] = useState({});
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const categories = [
+    'All',
+    'Web Development',
+    'Cybersecurity', 
+    'Desktop Applications',
+    'Blockchain',
+    '3D & Graphics',
+    'Mobile & Cross-Platform',
+    'Media & Entertainment',
+    'Educational',
+    'AI & Machine Learning',
+    'Business & Productivity'
+  ];
 
   useEffect(() => {
     // Load likes from localStorage
@@ -70,9 +92,10 @@ const Projects = () => {
       likes: 0,
       featured: true,
       isNew: true,
-      achievement: "🏆 Latest Achievement - Complete Browser-Based IDE"
+      achievement: "🏆 Latest Achievement - Complete Browser-Based IDE",
+      category: "Web Development"
     },
-    {
+        {
       id: 2,
       title: "🎓 Blockchain Certificate Verification System",
       description: "A comprehensive, enterprise-grade blockchain-based academic certificate verification platform. Features React TypeScript frontend, Flask backend, custom SHA-256 blockchain implementation, JWT authentication, role-based access control, real-time verification, and professional documentation. Eliminates certificate fraud through immutable blockchain storage.",
@@ -85,7 +108,8 @@ const Projects = () => {
       likes: 0,
       featured: true,
       isNew: true,
-      achievement: "🏆 Latest Achievement - Full-Stack Blockchain Application"
+      achievement: "🏆 Latest Achievement - Full-Stack Blockchain Application",
+      category: "Blockchain",
     },
     {
       id: 3,
@@ -96,7 +120,8 @@ const Projects = () => {
       readme: "https://github.com/Umairism/Interactive-Portfolio/blob/main/README.md",
       live: "https://memyport.netlify.app",
       image: portfolioImage,
-      color: "from-blue-500 to-purple-600"
+      color: "from-blue-500 to-purple-600",
+      category: "Web Development",
     },
     {
       id: 4,
@@ -109,7 +134,8 @@ const Projects = () => {
       image: PortableAiImage,
       color: "from-blue-500 to-purple-600",
       likes: 0,
-      featured: true
+      featured: true,
+      category: "AI & Machine Learning",
     },
     {
       id: 5,
@@ -122,7 +148,8 @@ const Projects = () => {
       image: aircrackGuiImage,
       color: "from-red-500 to-orange-600",
       likes: 0,
-      featured: true
+      featured: true,
+      category: "Cybersecurity",
     },
     {
       id: 6,
@@ -135,7 +162,8 @@ const Projects = () => {
       image: ecommerceImage,
       color: "from-green-500 to-teal-600",
       likes: 0,
-      featured: true
+      featured: true,
+      category: "Web Development",
     },
     {
       id: 7,
@@ -148,10 +176,11 @@ const Projects = () => {
       image: slimeTubeImage,
       color: "from-red-500 to-pink-600",
       likes: 0,
-      featured: true
+      featured: true,
+      category: "Media & Entertainment",
     },
     {
-      id: 6,
+      id: 8,
       title: "Task Manager App",
       description: "A task management app created to help users organize and track their daily tasks. Built with React.js and MongoDB, it features CRUD operations and user authentication.",
       tech: ["React.js", "MongoDB", "Node.js"],
@@ -159,10 +188,11 @@ const Projects = () => {
       readme: "https://github.com/Umairism/task-manager/blob/main/README.md",
       live: "https://memytaskmgr.netlify.app",
       image: taskManagerImage,
-      color: "from-orange-500 to-red-600"
+      color: "from-purple-500 to-pink-600",
+      category: "Web Development"
     },
     {
-      id: 7,
+      id: 9,
       title: "DDOS Simulation Tool",
       description: "Whistler v0.3 DDoS Simulation Tool (Educational Use) - A CLI-based Python application designed to simulate Distributed Denial-of-Service attacks for ethical and educational purposes.",
       tech: ["Python", "Scapy", "Networking"],
@@ -170,10 +200,11 @@ const Projects = () => {
       readme: "https://github.com/Umairism/Dos-Tool/blob/main/README.md",
       live: null,
       image: ddosToolImage,
-      color: "from-purple-500 to-pink-600"
+      color: "from-orange-500 to-red-600",
+      category: "Cybersecurity",
     },
     {
-      id: 8,
+      id: 10,
       title: "Weather Forecast App",
       description: "A weather app that fetches data from the OpenWeatherMap API. Users can input a location and view the weather forecast for that area. Built with React.js, demonstrating API integration.",
       tech: ["React.js", "API", "JavaScript"],
@@ -181,10 +212,11 @@ const Projects = () => {
       readme: "https://github.com/Umairism/Weather-App/blob/main/README.md",
       live: "https://memyweather.netlify.app",
       image: weatherAppImage,
-      color: "from-cyan-500 to-blue-600"
+      color: "from-cyan-500 to-blue-600",
+      category: "Web Development",
     },
     {
-      id: 9,
+      id: 11,
       title: "Student Portal",
       description: "A student portal application designed to manage student information, courses, and grades. Built with React.js and Node.js, it provides a user-friendly interface for students and administrators.",
       tech: ["React.js", "Node.js", "Database"],
@@ -192,10 +224,11 @@ const Projects = () => {
       readme: "https://github.com/Umairism/student-portal/blob/main/README.md",
       live: "https://memystudentportal.netlify.app",
       image: studentPortalImage,
-      color: "from-indigo-500 to-purple-600"
+      color: "from-indigo-500 to-purple-600",
+      category: "Educational",
     },
     {
-      id: 10,
+      id: 12,
       title: "Pharmacy Inventory Management",
       description: "A web application for managing pharmacy inventory, including features for tracking stock levels, sales, and orders. Built with React.js and Node.js, it provides a comprehensive solution for pharmacy management.",
       tech: ["React.Js", "TypeScript", "React-Router-Dom", "Tailwind CSS"],
@@ -203,10 +236,11 @@ const Projects = () => {
       readme: "https://github.com/Umairism/Medical-Store-Management-System/blob/main/README.md",
       live: "https://memymedi.netlify.app",
       image: medicalImage,
-      color: "from-teal-500 to-green-600"
+      color: "from-teal-500 to-green-600",
+      category: "Business & Productivity",
     },
     {
-      id: 11,
+      id: 13,
       title: "Medical Equipment Store {Template}",
       description: "",
       tech: ["JavaScript", "HTML", "CSS", "TypeScript", "React.js", "Tailwind CSS"],
@@ -214,20 +248,22 @@ const Projects = () => {
       readme: "https://github.com/Umairism/Xperti/blob/main/README.md",
       live: "https://xperti.netlify.app/",
       image: xpertiImage,
-      color: "from-teal-500 to-green-600"
+      color: "from-teal-500 to-green-600",
+      category: "Business & Productivity",
     },
     {
-      id: 12,
+      id: 14,
       title: "Surveillance and Monitoring Drone System",
       description: "A drone system designed for surveillance and monitoring purposes. Features real-time video streaming, GPS tracking, and automated flight paths.",
       tech: ["Drone Technology", "Computer Vision", "Real-time Streaming", "Python", "OpenCV", "Flask", "DroneKit", "GPS", "WebRTC", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/Umairism/Drone-System.git",
       readme: "https://github.com/Umairism/Drone-System/blob/main/README.md",
       image: droneImage,
-      color: "from-teal-500 to-green-600"
+      color: "from-teal-500 to-green-600",
+      category: "AI & Machine Learning",
     },
     {
-      id: 13,
+      id: 15,
       title: "WordPress Websites",
       description: "Professional WordPress websites developed for clients to showcase their business and services. Features custom themes and plugins tailored to meet specific client requirements.",
       tech: ["WordPress", "PHP", "Custom Themes"],
@@ -239,7 +275,7 @@ const Projects = () => {
       color: "from-teal-500 to-green-600",
     },
     {
-      id: 14,
+      id: 16,
       title: "Benchmark School Management System",
       description: "A modern, professional school management platform that brings together educators, students, and administrators in a comprehensive digital environment. Features modern homepage with gradient animations, professional dashboard with analytics, article system with rich content creation, community confessions, and hybrid database integration with Supabase and localStorage fallback.",
       tech: ["React.js", "TypeScript", "Vite", "TailwindCSS", "Supabase", "Lucide React", "Authentication", "Real-time Sync"],
@@ -249,10 +285,11 @@ const Projects = () => {
       image: benchmarkImage,
       color: "from-purple-500 to-indigo-600",
       likes: 0,
-      featured: true
+      featured: true,
+      category: "Educational",
     },
     {
-      id: 15,
+      id: 17,
       title: "Benchmark School System (Offline)",
       description: "Offline-capable version of the school management platform with localStorage integration. Features the same comprehensive functionality as the online version but works completely offline with automatic data synchronization when connection is restored. Perfect for environments with limited internet access.",
       tech: ["React.js", "TypeScript", "Vite", "TailwindCSS", "localStorage", "Offline-First", "Progressive Web App", "Data Synchronization"],
@@ -262,10 +299,11 @@ const Projects = () => {
       image: benchmarkImage,
       color: "from-indigo-500 to-blue-600",
       likes: 0,
-      featured: false
+      featured: false,
+      category: "Educational",
     },
     {
-      id: 16,
+      id: 18,
       title: "React Native Mobile App",
       description: "A comprehensive mobile application built with React Native featuring modern UI/UX design patterns. Demonstrates cross-platform mobile development with native components, state management, and responsive design. Includes form handling, navigation, and professional mobile interfaces.",
       tech: ["React Native", "TypeScript", "Mobile Development", "Cross-Platform", "Native Components", "State Management"],
@@ -275,10 +313,11 @@ const Projects = () => {
       image: mobileAppImage,
       color: "from-green-500 to-emerald-600",
       likes: 0,
-      featured: false
+      featured: false,
+      category: "Mobile & Cross-Platform",
     },
     {
-      id: 17,
+      id: 19,
       title: "Offline Card Wallet - Mobile Demo",
       description: "A demonstration mobile application showcasing React Native development concepts for payment card management. Features card addition, secure number masking, transaction simulation, NFC payment mockups, QR code payments, and professional mobile UI design. Built for learning purposes with modern mobile development patterns.",
       tech: ["React Native", "TypeScript", "Mobile UI/UX", "Payment Simulation", "NFC Mockup", "QR Payments", "Cross-Platform"],
@@ -288,10 +327,11 @@ const Projects = () => {
       image: mobileAppImage,
       color: "from-cyan-500 to-teal-600",
       likes: 0,
-      featured: false
+      featured: false,
+      category: "Mobile & Cross-Platform",
     },
     {
-      id: 18,
+      id: 20,
       title: "OpenCV Enterprise Computer Vision Hub",
       description: "A centralized hub for enterprise-grade computer vision projects leveraging OpenCV. Features motion detection security camera systems, face recognition, object tracking, license plate recognition, image segmentation, gesture recognition, and augmented reality solutions. Designed for scalable, maintainable, and secure development of vision-based enterprise applications.",
       tech: ["OpenCV", "Python", "Computer Vision", "Machine Learning", "Image Processing", "Real-time Analytics", "Enterprise Solutions"],
@@ -301,10 +341,11 @@ const Projects = () => {
       image: opencvImage,
       color: "from-orange-500 to-red-600",
       likes: 0,
-      featured: true
+      featured: true,
+      category: "AI & Machine Learning"
     },
     {
-      id: 19,
+      id: 21,
       title: "Advanced Task Manager",
       description: "A comprehensive task management application with modern features and professional UI. Built with React and modern web technologies, featuring advanced task organization, priority management, deadline tracking, and collaborative features. Includes real-time updates and responsive design for optimal user experience.",
       tech: ["React.js", "Node.js", "Task Management", "Real-time Updates", "Responsive Design", "Modern UI/UX"],
@@ -314,10 +355,11 @@ const Projects = () => {
       image: taskManagerImage,
       color: "from-yellow-500 to-orange-600",
       likes: 0,
-      featured: false
+      featured: false,
+      category: "Business & Productivity",
     },
     {
-      id: 20,
+      id: 22,
       title: "🐧 LinuxOS Desktop Environment",
       description: "A modern, web-based desktop operating system experience built with vanilla JavaScript, HTML5, and CSS3. Features a sleek macOS-inspired interface with Linux personality and full functionality. Includes window management, dynamic wallpapers, macOS-style dock, built-in applications (Firefox browser, calculator, file manager, text editor, terminal), system preferences, and smooth animations. Zero dependencies with pure vanilla JavaScript, 60fps CSS transitions, glass morphism UI, and keyboard shortcuts support.",
       tech: ["Vanilla JavaScript", "HTML5", "CSS3", "Window Management", "Glass Morphism", "Responsive Design", "Desktop OS", "Zero Dependencies", "Animation", "File System API"],
@@ -329,9 +371,168 @@ const Projects = () => {
       likes: 0,
       featured: true,
       isNew: true,
-      achievement: "🏆 Latest Project - Pure Vanilla JS Desktop OS"
+      achievement: "🏆 Latest Project - Pure Vanilla JS Desktop OS",
+      category: "Web Development",
+    },
+        {
+      id: 23,
+      title: "💕 Interactive Proposal Website",
+      description: "A beautiful, romantic, and interactive proposal website built with React, TypeScript, and Three.js. Features stunning 3D heart animations using mathematical equations, 12 floating balloons with realistic physics, spectacular confetti explosions, enhanced music integration with multiple sources (YouTube, SoundCloud, audio files), glass-morphism UI effects, and smooth animations. Includes 8,000+ particles forming a perfect heart shape, responsive design for all devices, and professional performance optimizations targeting 60fps.",
+      tech: ["React.js", "TypeScript", "Three.js", "Vite", "Tailwind CSS", "WebGL", "3D Graphics", "Mathematical Animations", "Glass Morphism", "Particle Systems", "Music Integration"],
+      github: "https://github.com/Umairism/Proposal",
+      readme: "https://github.com/Umairism/Proposal/blob/main/README.md",
+      live: null,
+      image: proposalImage,
+      color: "from-pink-500 to-red-600",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Latest Project - Interactive Romantic Experience",
+      category: "3D & Graphics",
+    },
+    {
+      id: 24,
+      title: "🎵 Lyrixx - Real-time Lyrics Synchronization App",
+      description: "A comprehensive Python desktop application that provides real-time synchronized lyrics display for songs. Features advanced music detection via microphone or system audio, song recognition using ACRCloud API, lyrics fetching from multiple sources (Apiary, Musixmatch, Genius), multi-language translation support, karaoke-style highlighting, and professional Tkinter GUI interface. Includes audio processing with pyaudio/sounddevice, Windows Stereo Mix support, and extensive configuration management for seamless user experience.",
+      tech: ["Python", "Tkinter", "ACRCloud API", "Apiary API", "PyAudio", "SoundDevice", "Real-time Processing", "Music Recognition", "Lyrics APIs", "Audio Processing", "Multi-language Translation"],
+      github: "https://github.com/Umairism/Lyrixx",
+      readme: "https://github.com/Umairism/Lyrixx/blob/main/README.md",
+      live: null,
+      image: portfolioImage,
+      color: "from-purple-500 to-pink-600",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Latest Achievement - Desktop Music Recognition App",
+      category: "Media & Entertainment",
+    },
+    {
+      id: 25,
+      title: "🛡️ Advanced Penetration Testing Framework",
+      description: "A comprehensive, professional-grade penetration testing framework with modern GUI interface. Features advanced network scanner with high-speed TCP/SYN scanning, vulnerability assessment with CVE integration, payload generator for multiple platforms, professional HTML reporting, anti-detection techniques, stealth communication methods, and cryptographic utilities. Built with Python 3.8+, includes CLI mode, interactive menu, real-time progress tracking, and multi-threading for maximum performance. Designed for security professionals and educational purposes.",
+      tech: ["Python", "Scapy", "Tkinter", "Network Security", "Penetration Testing", "Vulnerability Assessment", "Cryptography", "Multi-threading", "Professional Reporting", "CLI Interface", "GUI Framework"],
+      github: "https://github.com/Umairism/advanced-pentest-framework",
+      readme: "https://github.com/Umairism/advanced-pentest-framework/blob/main/README.md",
+      live: null,
+      image: ddosToolImage,
+      color: "from-red-600 to-orange-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Latest Achievement - Professional Security Framework",
+      category: "Cybersecurity",
+    },
+    {
+      id: 26,
+      title: "🎂 Birthday Celebration Website",
+      description: "A delightful TypeScript-based birthday celebration website featuring interactive animations, personalized messages, and engaging visual effects. Built with modern web technologies to create memorable birthday experiences with smooth animations, responsive design, and festive elements that bring joy to special celebrations.",
+      tech: ["TypeScript", "HTML5", "CSS3", "JavaScript", "Animations", "Responsive Design"],
+      github: "https://github.com/Umairism/Birthday",
+      readme: "https://github.com/Umairism/Birthday/blob/main/README.md",
+      live: null,
+      image: birthdayImage,
+      color: "from-yellow-400 to-pink-500",
+      likes: 0,
+      featured: false,
+      isNew: true,
+      category: "Media & Entertainment",
+    },
+    {
+      id: 27,
+      title: "🎨 3D Portfolio Experience",
+      description: "An innovative 3D portfolio website built with TypeScript showcasing projects and skills in an immersive three-dimensional environment. Features interactive 3D elements, smooth transitions, modern animations, and cutting-edge web technologies to create a unique portfolio experience that stands out from traditional flat designs.",
+      tech: ["TypeScript", "Three.js", "WebGL", "3D Graphics", "Modern Animations", "Interactive Design"],
+      github: "https://github.com/Umairism/3D_Portfolio",
+      readme: "https://github.com/Umairism/3D_Portfolio/blob/main/README.md",
+      live: null,
+      image: portfolioImage,
+      color: "from-purple-600 to-blue-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      category: "3D & Graphics",
+    },
+    {
+      id: 28,
+      title: "🔌 USBForge - USB Security Tool",
+      description: "A sophisticated Python-based USB security and forensics tool designed for cybersecurity professionals. Features USB device analysis, security assessment capabilities, forensic data extraction, device fingerprinting, and comprehensive reporting. Built for ethical hacking and security research purposes with professional-grade functionality.",
+      tech: ["Python", "USB Security", "Forensics", "Cybersecurity", "Device Analysis", "Security Assessment"],
+      github: "https://github.com/Umairism/USBForge",
+      readme: "https://github.com/Umairism/USBForge/blob/main/README.md",
+      live: null,
+      image: usbForgeImage,
+      color: "from-green-600 to-teal-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      category: "Desktop Applications"
+    },
+    {
+      id: 29,
+      title: "⛓️ Blockchain Certificate System",
+      description: "A comprehensive Python-based blockchain certificate system for secure academic credential verification. Features custom blockchain implementation, certificate generation and validation, immutable record storage, cryptographic security, and professional API interface. Designed to eliminate certificate fraud through decentralized verification methods.",
+      tech: ["Python", "Blockchain", "Cryptography", "Certificate Validation", "API Development", "Security"],
+      github: "https://github.com/Umairism/blockchain-cert-system",
+      readme: "https://github.com/Umairism/blockchain-cert-system/blob/main/README.md",
+      live: null,
+      image: blockchainCertSystemImage,
+      color: "from-blue-600 to-cyan-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      category: "Blockchain",
+    },
+    {
+      id: 30,
+      title: "🚀 Outsource Accelerator Platform",
+      description: "A comprehensive TypeScript-based business automation and outsourcing management platform. Features project management capabilities, client-freelancer matching system, automated workflow processing, real-time collaboration tools, and professional dashboard interface. Built to streamline outsourcing operations and accelerate business growth through intelligent automation.",
+      tech: ["TypeScript", "Business Automation", "Project Management", "Real-time Collaboration", "Dashboard Interface", "Workflow Automation"],
+      github: "https://github.com/Umairism/Outsource-Accelerator",
+      readme: "https://github.com/Umairism/Outsource-Accelerator/blob/main/README.md",
+      live: null,
+      image: outsourceAcceleratorImage,
+      color: "from-emerald-600 to-teal-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      category: "Business & Productivity",
+    },
+    {
+      id: 31,
+      title: "🎓 Teachers Club Educational Platform",
+      description: "A modern TypeScript-based educational platform designed for teachers and educational institutions. Features comprehensive course management, student progress tracking, interactive learning tools, assignment distribution system, grade management, and collaborative educational environment. Built to enhance the teaching and learning experience with modern web technologies.",
+      tech: ["TypeScript", "Educational Technology", "Course Management", "Student Tracking", "Interactive Tools", "Collaborative Platform"],
+      github: "https://github.com/Umairism/Teachers_Club",
+      readme: "https://github.com/Umairism/Teachers_Club/blob/main/README.md",
+      live: null,
+      image: teachersClubImage,
+      color: "from-indigo-600 to-purple-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      category: "Educational",
+    },
+    {
+      id: 32,
+      title: "🐍 Python's Might - Demonstration Project",
+      description: "A comprehensive Python project showcasing the versatility and power of Python programming language. Features various Python capabilities including data structures, algorithms, web scraping, automation scripts, data analysis, and advanced programming concepts. Built as an educational resource and demonstration of Python's extensive capabilities across different domains.",
+      tech: ["Python", "Data Structures", "Algorithms", "Web Scraping", "Automation", "Data Analysis", "Educational"],
+      github: "https://github.com/Umairism/Python-s-might",
+      readme: "https://github.com/Umairism/Python-s-might/blob/main/README.md",
+      live: null,
+      image: pythonMightImage,
+      color: "from-green-500 to-blue-600",
+      likes: 0,
+      featured: false,
+      isNew: true,
+      category: "Desktop Applications",
     }
   ];
+
+  // Filter projects based on selected category
+  const filteredProjects = selectedCategory === 'All' 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
 
   return (
     <div className="page-container">
@@ -345,8 +546,24 @@ const Projects = () => {
               as a developer.
             </p>
             
+            {/* Category Filter */}
+            <div className="category-filter">
+              <h3 className="filter-title">Filter by Category:</h3>
+              <div className="category-buttons">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
+                    onClick={() => setSelectedCategory(category)}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </div>
+            
             <div className="projects-stack">
-              {projects.map((project, index) => (
+              {filteredProjects.map((project, index) => (
                 <div
                   key={project.id}
                   className={`project-tile ${selectedProject === project.id ? 'active' : ''}`}
