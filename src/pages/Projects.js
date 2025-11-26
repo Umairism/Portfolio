@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-// Import project images
+// Import unique project images (no duplicates)
 import codespaceImage from "../Images/CodeSpace.png";
 import portfolioImage from "../Images/1.png";
 import ecommerceImage from "../Images/Ecom.png";
 import slimeTubeImage from "../Images/SlimeTube.png";
-import taskManagerImage from "../Images/portal.png";
+import portalImage from "../Images/portal.png";
 import ddosToolImage from "../Images/Ddos.png";
 import weatherAppImage from "../Images/weather.png";
-import studentPortalImage from "../Images/portal.png";
 import wordpressImage from "../Images/adobe.png";
 import medicalImage from "../Images/Medi.png";
 import xpertiImage from "../Images/Xperti.png";
@@ -15,17 +14,12 @@ import droneImage from "../Images/Drone.png";
 import PortableAiImage from "../Images/PortableAiAgent.png";
 import aircrackGuiImage from "../Images/Aircrack.png";
 import benchmarkImage from "../Images/me3.png";
-import mobileAppImage from "../Images/portal.png";
-import opencvImage from "../Images/1.png";
 import blockchainCertImage from '../Images/lockchain-cert.png';
 import linuxosDesktopImage from '../Images/LinuxOS-Desktop.png';
 import proposalImage from '../Images/Proposal.png';
-import birthdayImage from '../Images/me3.png';
-import usbForgeImage from '../Images/Ddos.png';
-import blockchainCertSystemImage from '../Images/lockchain-cert.png';
-import outsourceAcceleratorImage from '../Images/Ecom.png';
-import teachersClubImage from '../Images/portal.png';
-import pythonMightImage from '../Images/1.png';
+
+// Placeholder for projects without unique images (uses gradient background)
+const imagePlaceholder = null;
 
 
 const Projects = () => {
@@ -44,7 +38,8 @@ const Projects = () => {
     'Media & Entertainment',
     'Educational',
     'AI & Machine Learning',
-    'Business & Productivity'
+    'Business & Productivity',
+    'Healthcare & IoT'
   ];
 
   useEffect(() => {
@@ -187,7 +182,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/task-manager",
       readme: "https://github.com/Umairism/task-manager/blob/main/README.md",
       live: "https://memytaskmgr.netlify.app",
-      image: taskManagerImage,
+      image: portalImage,
       color: "from-purple-500 to-pink-600",
       category: "Web Development"
     },
@@ -223,7 +218,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/student-portal",
       readme: "https://github.com/Umairism/student-portal/blob/main/README.md",
       live: "https://memystudentportal.netlify.app",
-      image: studentPortalImage,
+      image: imagePlaceholder,
       color: "from-indigo-500 to-purple-600",
       category: "Educational",
     },
@@ -296,7 +291,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/benchmark-school-system",
       readme: "https://github.com/Umairism/benchmark-school-system/blob/main/README.md",
       live: null,
-      image: benchmarkImage,
+      image: imagePlaceholder,
       color: "from-indigo-500 to-blue-600",
       likes: 0,
       featured: false,
@@ -310,7 +305,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/Mobile_App_Demo",
       readme: "https://github.com/Umairism/Mobile_App_Demo/blob/master/README.md",
       live: null,
-      image: mobileAppImage,
+      image: imagePlaceholder,
       color: "from-green-500 to-emerald-600",
       likes: 0,
       featured: false,
@@ -324,7 +319,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/Offline_Card_Wallet",
       readme: "https://github.com/Umairism/Offline_Card_Wallet/blob/main/README.md",
       live: null,
-      image: mobileAppImage,
+      image: imagePlaceholder,
       color: "from-cyan-500 to-teal-600",
       likes: 0,
       featured: false,
@@ -338,7 +333,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/OpenCV",
       readme: "https://github.com/Umairism/OpenCV/blob/main/README.md",
       live: null,
-      image: opencvImage,
+      image: imagePlaceholder,
       color: "from-orange-500 to-red-600",
       likes: 0,
       featured: true,
@@ -352,7 +347,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/TaskManager",
       readme: null,
       live: null,
-      image: taskManagerImage,
+      image: imagePlaceholder,
       color: "from-yellow-500 to-orange-600",
       likes: 0,
       featured: false,
@@ -398,7 +393,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/Lyrixx",
       readme: "https://github.com/Umairism/Lyrixx/blob/main/README.md",
       live: null,
-      image: portfolioImage,
+      image: imagePlaceholder,
       color: "from-purple-500 to-pink-600",
       likes: 0,
       featured: true,
@@ -414,7 +409,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/advanced-pentest-framework",
       readme: "https://github.com/Umairism/advanced-pentest-framework/blob/main/README.md",
       live: null,
-      image: ddosToolImage,
+      image: imagePlaceholder,
       color: "from-red-600 to-orange-700",
       likes: 0,
       featured: true,
@@ -430,7 +425,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/Birthday",
       readme: "https://github.com/Umairism/Birthday/blob/main/README.md",
       live: null,
-      image: birthdayImage,
+      image: imagePlaceholder,
       color: "from-yellow-400 to-pink-500",
       likes: 0,
       featured: false,
@@ -445,7 +440,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/3D_Portfolio",
       readme: "https://github.com/Umairism/3D_Portfolio/blob/main/README.md",
       live: null,
-      image: portfolioImage,
+      image: imagePlaceholder,
       color: "from-purple-600 to-blue-700",
       likes: 0,
       featured: true,
@@ -460,7 +455,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/USBForge",
       readme: "https://github.com/Umairism/USBForge/blob/main/README.md",
       live: null,
-      image: usbForgeImage,
+      image: imagePlaceholder,
       color: "from-green-600 to-teal-700",
       likes: 0,
       featured: true,
@@ -475,7 +470,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/blockchain-cert-system",
       readme: "https://github.com/Umairism/blockchain-cert-system/blob/main/README.md",
       live: null,
-      image: blockchainCertSystemImage,
+      image: imagePlaceholder,
       color: "from-blue-600 to-cyan-700",
       likes: 0,
       featured: true,
@@ -490,7 +485,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/Outsource-Accelerator",
       readme: "https://github.com/Umairism/Outsource-Accelerator/blob/main/README.md",
       live: null,
-      image: outsourceAcceleratorImage,
+      image: imagePlaceholder,
       color: "from-emerald-600 to-teal-700",
       likes: 0,
       featured: true,
@@ -505,7 +500,7 @@ const Projects = () => {
       github: "https://github.com/Umairism/Teachers_Club",
       readme: "https://github.com/Umairism/Teachers_Club/blob/main/README.md",
       live: null,
-      image: teachersClubImage,
+      image: imagePlaceholder,
       color: "from-indigo-600 to-purple-700",
       likes: 0,
       featured: true,
@@ -520,12 +515,92 @@ const Projects = () => {
       github: "https://github.com/Umairism/Python-s-might",
       readme: "https://github.com/Umairism/Python-s-might/blob/main/README.md",
       live: null,
-      image: pythonMightImage,
+      image: imagePlaceholder,
       color: "from-green-500 to-blue-600",
       likes: 0,
       featured: false,
       isNew: true,
       category: "Desktop Applications",
+    },
+    {
+      id: 33,
+      title: "🩺 HealSense - Deep Learning Health Surveillance",
+      description: "A comprehensive Final Year Project (FYP) implementing deep learning-based smart health surveillance and prediction model. Features IoT hardware integration with Arduino and Raspberry Pi, React web dashboard, Flutter mobile app, TensorFlow/PyTorch ML models, real-time health monitoring, Prometheus/Grafana observability stack, and Kubernetes infrastructure. Designed for continuous health tracking with predictive analytics for early disease detection.",
+      tech: ["TypeScript", "Python", "React", "Flutter", "TensorFlow", "PyTorch", "Arduino", "Raspberry Pi", "Kubernetes", "Prometheus", "Grafana", "IoT", "Deep Learning"],
+      github: "https://github.com/Umairism/FYP-Project",
+      readme: "https://github.com/Umairism/FYP-Project/blob/main/README.md",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-red-500 to-pink-600",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Final Year Project - AI-Powered Health Monitoring System",
+      category: "Healthcare & IoT",
+    },
+    {
+      id: 34,
+      title: "📰 The Chronicle - News Aggregation Platform",
+      description: "A modern, feature-rich news aggregation and publication platform built with React, TypeScript, and Supabase. Features dual news APIs (NewsAPI & GNews), intelligent dark/light mode with system preference detection, admin dashboard for article management, smart categorization, PostgreSQL database with Row-Level Security, API caching with rate limiting, and fully responsive mobile-first design. A complete CMS for news publishing.",
+      tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "PostgreSQL", "Express.js", "NewsAPI", "GNews API", "JWT Authentication", "RLS"],
+      github: "https://github.com/Umairism/The-Chronicle",
+      readme: "https://github.com/Umairism/The-Chronicle/blob/main/README.md",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-slate-600 to-gray-800",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Full-Stack News Publishing Platform",
+      category: "Web Development",
+    },
+    {
+      id: 35,
+      title: "🏢 Office Management System",
+      description: "A professional, modern web application for managing employee records built with ASP.NET Web Forms and .NET Framework 4.8. Features complete CRUD operations, Bootstrap 5 responsive UI, dashboard statistics, n-tier architecture with Data Access Layer, Business Logic Layer, and Presentation Layer. Implements SQL Server database with proper error handling and professional design patterns.",
+      tech: ["ASP.NET", ".NET Framework 4.8", "C#", "SQL Server", "Bootstrap 5", "JavaScript", "N-Tier Architecture", "Web Forms"],
+      github: "https://github.com/Umairism/OfficeManagementSystem",
+      readme: "https://github.com/Umairism/OfficeManagementSystem/blob/master/README.md",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-blue-700 to-indigo-800",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Enterprise .NET Application",
+      category: "Business & Productivity",
+    },
+    {
+      id: 36,
+      title: "💒 WeddingShare - Event Photo Sharing Platform",
+      description: "A full-stack Next.js application for secure image and video uploads with an admin dashboard for file management. Perfect for wedding events to collect guest photos. Features drag-and-drop upload, multi-file support, real-time progress, JWT authentication, Row-Level Security, rate limiting (5 uploads/IP/minute), automatic file organization by date, and Supabase storage. Deployed on Vercel with complete admin controls.",
+      tech: ["Next.js 13", "React", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "JWT", "shadcn/ui", "Vercel", "RLS"],
+      github: "https://github.com/Umairism/WeddingShare",
+      readme: "https://github.com/Umairism/WeddingShare/blob/main/README.md",
+      live: "https://wedding-share-vert.vercel.app",
+      image: imagePlaceholder,
+      color: "from-pink-500 to-rose-600",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Event Media Management Platform",
+      category: "Web Development",
+    },
+    {
+      id: 37,
+      title: "⛓️ AI-Powered Blockchain Certificate System",
+      description: "A comprehensive, AI-enhanced blockchain certificate verification system combining offline AI automation with Ethereum smart contracts. Features OCR certificate extraction, NLP validation, AI fraud detection with FAISS knowledge base, Ethereum smart contracts for immutable storage, IPFS integration, MetaMask connectivity, multi-role dashboards (Issuer, Verifier, Admin, Public), and complete privacy with offline AI processing.",
+      tech: ["React", "TypeScript", "Flask", "Python", "Ethereum", "Solidity", "IPFS", "Web3.py", "FAISS", "OCR", "NLP", "AI/ML", "MetaMask", "Docker"],
+      github: "https://github.com/Umairism/blockchain-cert-system",
+      readme: "https://github.com/Umairism/blockchain-cert-system/blob/master/README.md",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-emerald-600 to-cyan-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 AI + Blockchain Integration Project",
+      category: "Blockchain",
     }
   ];
 
@@ -576,14 +651,16 @@ const Projects = () => {
                   <div className="project-tile-inner">
                     <div className="project-image-container">
                       <div className={`project-image-placeholder bg-gradient-to-br ${project.color}`}>
-                        <img 
-                          src={project.image} 
-                          alt={project.title}
-                          className="project-image"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                          }}
-                        />
+                        {project.image && (
+                          <img 
+                            src={project.image} 
+                            alt={project.title}
+                            className="project-image"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                            }}
+                          />
+                        )}
                         <div className="project-image-overlay">
                           <span className="project-number">#{project.id}</span>
                         </div>

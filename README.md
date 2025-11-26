@@ -1,13 +1,13 @@
 # Portfolio Website
 
-A modern, responsive portfolio website showcasing full-stack development skills and innovative projects across web development, cybersecurity, blockchain, AI/ML, and mobile applications.
+A modern, responsive portfolio website showcasing full-stack development skills and innovative projects across web development, cybersecurity, blockchain, AI/ML, mobile applications, and healthcare IoT.
 
 **Live Demo**: [View Live](https://umairhakeem.netlify.app)  
-**Repository**: [GitHub](https://github.com/Umairism/Interactive-Portfolio)
+**Repository**: [GitHub](https://github.com/Umairism/Portfolio)
 
 ## Overview
 
-This portfolio demonstrates my expertise in full-stack development through 32 diverse projects. From browser-based IDEs to blockchain verification systems, each project represents a solution to real-world challenges using modern technologies.
+This portfolio demonstrates my expertise in full-stack development through 37+ diverse projects. From browser-based IDEs to blockchain verification systems, AI-powered health monitoring to enterprise management solutions, each project represents a solution to real-world challenges using modern technologies.
 
 ## Featured Projects
 
@@ -18,11 +18,23 @@ Complete development environment running entirely in the browser with zero setup
 - **Repository**: [codespace](https://github.com/Umairism/codespace)
 - **Live Demo**: [webcodespace.netlify.app](https://webcodespace.netlify.app)
 
-### Blockchain Certificate Verification System
-Enterprise-grade platform for academic certificate verification using custom blockchain implementation.
-- **Technologies**: React, TypeScript, Flask, Python, Custom Blockchain, JWT Authentication
-- **Features**: Immutable certificate storage, SHA-256 blockchain, role-based access control
-- **Repository**: [blockchain-certificate-verification](https://github.com/Umairism/blockchain-certificate-verification)
+### HealSense - Deep Learning Health Surveillance (FYP)
+AI-powered smart health surveillance and prediction model with IoT integration.
+- **Technologies**: TypeScript, Python, React, Flutter, TensorFlow, Arduino, Raspberry Pi, Kubernetes
+- **Features**: Real-time health monitoring, ML predictions, IoT sensors, mobile app, observability stack
+- **Repository**: [FYP-Project](https://github.com/Umairism/FYP-Project)
+
+### AI-Powered Blockchain Certificate Verification System
+Enterprise-grade platform combining AI automation with Ethereum blockchain for certificate verification.
+- **Technologies**: React, TypeScript, Flask, Python, Ethereum, Solidity, IPFS, FAISS, OCR, NLP
+- **Features**: AI fraud detection, immutable blockchain storage, multi-role dashboards, MetaMask integration
+- **Repository**: [blockchain-cert-system](https://github.com/Umairism/blockchain-cert-system)
+
+### The Chronicle - News Aggregation Platform
+Modern news aggregation and publication platform with CMS capabilities.
+- **Technologies**: React, TypeScript, Supabase, PostgreSQL, Express.js, NewsAPI, GNews
+- **Features**: Dual news APIs, admin dashboard, dark/light mode, smart categorization, RLS security
+- **Repository**: [The-Chronicle](https://github.com/Umairism/The-Chronicle)
 
 ### LinuxOS Desktop Environment
 Web-based desktop operating system with macOS-inspired interface and full functionality.
@@ -31,18 +43,25 @@ Web-based desktop operating system with macOS-inspired interface and full functi
 - **Repository**: [linuxos-desktop](https://github.com/umairism/linuxos-desktop)
 - **Live Demo**: [linuxos.netlify.app](https://linuxos.netlify.app)
 
+### Advanced Penetration Testing Framework
+Professional-grade security testing framework with modern GUI interface.
+- **Technologies**: Python, Scapy, Tkinter, Multi-threading, Cryptography
+- **Features**: Network scanning, vulnerability assessment, payload generation, CTF mode, professional reporting
+- **Repository**: [advanced-pentest-framework](https://github.com/Umairism/advanced-pentest-framework)
+
 ## Project Categories
 
 The portfolio includes projects across multiple domains:
 
-- **Web Development** (6 projects): Full-stack applications, e-commerce platforms, task management systems
+- **Web Development** (8 projects): Full-stack applications, e-commerce platforms, news aggregation, task management
 - **Cybersecurity** (3 projects): Penetration testing frameworks, wireless security tools, DDoS simulation
 - **AI & Machine Learning** (3 projects): Computer vision systems, portable AI agents, drone surveillance
-- **Blockchain** (2 projects): Certificate verification systems, custom blockchain implementations
+- **Blockchain** (3 projects): Certificate verification systems, AI-blockchain integration, custom implementations
 - **Educational** (4 projects): School management systems, student portals, teacher platforms
+- **Healthcare & IoT** (1 project): HealSense deep learning health monitoring system
 - **Mobile & Cross-Platform** (2 projects): React Native applications, payment simulation demos
 - **3D & Graphics** (2 projects): Three.js experiences, interactive proposals, mathematical animations
-- **Business & Productivity** (4 projects): Inventory management, medical store systems, outsourcing platforms
+- **Business & Productivity** (5 projects): Office management, inventory systems, medical stores, outsourcing platforms
 - **Media & Entertainment** (3 projects): Video streaming platforms, music recognition apps, celebration websites
 - **Desktop Applications** (2 projects): USB security tools, Python demonstration projects
 
@@ -52,14 +71,17 @@ The portfolio includes projects across multiple domains:
 ```javascript
 const technologies = {
   core: ['React 18.2.0', 'JavaScript ES6+', 'TypeScript', 'HTML5', 'CSS3'],
-  styling: ['Tailwind CSS', 'CSS Modules', 'Responsive Design'],
-  frameworks: ['React.js', 'Next.js', 'Three.js'],
-  backend: ['Node.js', 'Python', 'Flask', 'FastAPI'],
-  databases: ['MongoDB', 'SQLite', 'Supabase'],
-  blockchain: ['Custom Implementation', 'SHA-256', 'Cryptography'],
-  mobile: ['React Native', 'Cross-Platform Development'],
-  tools: ['Git', 'Docker', 'Vite', 'Webpack'],
-  deployment: ['Netlify', 'GitHub Actions', 'Vercel']
+  styling: ['Tailwind CSS', 'CSS Modules', 'Responsive Design', 'shadcn/ui'],
+  frameworks: ['React.js', 'Next.js 13', 'Three.js', 'Vite'],
+  backend: ['Node.js', 'Python', 'Flask', 'FastAPI', 'Express.js', 'ASP.NET'],
+  databases: ['MongoDB', 'SQLite', 'Supabase', 'PostgreSQL', 'SQL Server'],
+  blockchain: ['Ethereum', 'Solidity', 'Web3.py', 'IPFS', 'Custom Implementation'],
+  ai_ml: ['TensorFlow', 'PyTorch', 'OpenCV', 'FAISS', 'OCR', 'NLP'],
+  iot: ['Arduino', 'Raspberry Pi', 'DroneKit', 'GPS', 'WebRTC'],
+  mobile: ['React Native', 'Flutter', 'Cross-Platform Development'],
+  devops: ['Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'GitHub Actions'],
+  tools: ['Git', 'Vite', 'Webpack', 'Monaco Editor'],
+  deployment: ['Netlify', 'Vercel', 'GitHub Pages']
 };
 ```
 
@@ -115,17 +137,23 @@ Complete full-stack e-commerce solution with serverless backend architecture.
 - Features: Product catalog, shopping cart, search functionality, session management
 - Links: [GitHub](https://github.com/Umairism/e-commerce) | [Live Demo](https://myecoms.netlify.app)
 
-**Task Management System**
-Productivity application with real-time collaboration capabilities.
-- Technologies: React.js, MongoDB, Socket.io, JWT Authentication
-- Features: CRUD operations, real-time updates, user authentication, responsive design
-- Links: [GitHub](https://github.com/Umairism/task-manager) | [Live Demo](https://memytaskmgr.netlify.app)
+**The Chronicle - News Platform**
+Modern news aggregation and publication platform with complete CMS.
+- Technologies: React, TypeScript, Supabase, PostgreSQL, Express.js
+- Features: Dual news APIs, admin dashboard, dark/light mode, RLS security
+- Links: [GitHub](https://github.com/Umairism/The-Chronicle)
 
-**Weather Forecast Application**
-API-integrated weather application with geolocation support.
-- Technologies: React.js, OpenWeatherMap API, Geolocation API
-- Features: Real-time weather data, location detection, 5-day forecast
-- Links: [GitHub](https://github.com/Umairism/Weather-App) | [Live Demo](https://memyweather.netlify.app)
+**WeddingShare - Event Photo Sharing**
+Full-stack Next.js application for secure event media uploads.
+- Technologies: Next.js 13, TypeScript, Supabase, JWT, shadcn/ui
+- Features: Drag-and-drop upload, admin dashboard, rate limiting, auto-organization
+- Links: [GitHub](https://github.com/Umairism/WeddingShare) | [Live Demo](https://wedding-share-vert.vercel.app)
+
+**SlimeTube - Video Streaming Platform**
+YouTube-like platform with modern UI and persistent storage.
+- Technologies: React 18, TypeScript, Vite, Tailwind CSS, IndexedDB
+- Features: Video upload/playback, user management, wishlist, comprehensive testing
+- Links: [GitHub](https://github.com/Umairism/SlimeTube) | [Live Demo](https://flixii.netlify.app/)
 
 ### Cybersecurity
 
@@ -155,11 +183,28 @@ Advanced IoT project with computer vision and real-time streaming capabilities.
 - Features: Real-time video streaming, GPS tracking, automated flight paths
 - Repository: [GitHub](https://github.com/Umairism/Drone-System)
 
+### Healthcare & IoT
+
+**HealSense - Deep Learning Health Surveillance**
+Final Year Project implementing AI-powered health monitoring system.
+- Technologies: TypeScript, Python, TensorFlow, Arduino, Raspberry Pi, Kubernetes
+- Features: Real-time health monitoring, ML predictions, mobile app, observability stack
+- Repository: [GitHub](https://github.com/Umairism/FYP-Project)
+
+### Business & Enterprise
+
+**Office Management System**
+Professional employee management solution with .NET Framework.
+- Technologies: ASP.NET, C#, SQL Server, Bootstrap 5, N-Tier Architecture
+- Features: CRUD operations, dashboard statistics, professional design patterns
+- Repository: [GitHub](https://github.com/Umairism/OfficeManagementSystem)
+
 ### Additional Notable Projects
 
 - **Student Portal**: Educational management system for course and grade tracking
 - **Medical Store Management**: Healthcare inventory system with comprehensive reporting
-- **SlimeTube**: Video streaming platform with modern UI and user management
+- **Benchmark School System**: Modern educational platform with analytics and community features
+- **Teachers Club**: Comprehensive course management and student tracking platform
 
 ## Performance
 
