@@ -317,11 +317,11 @@ body::before {
 }
 
 .navbar {
-  position: fixed;
+  position:overlay fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 5;
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(71, 85, 105, 0.3);

@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
                 <div className="highlight-item">
                   <span className="highlight-icon">🚀</span>
-                  <span>React.js Specialist</span>
+                  <span><b>React.js</b> & <b>Python</b> Specialist</span>
                 </div>
               </div>
             </div>
