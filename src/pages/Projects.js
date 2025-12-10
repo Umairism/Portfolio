@@ -601,6 +601,22 @@ const Projects = () => {
       isNew: true,
       achievement: "🏆 AI + Blockchain Integration Project",
       category: "Blockchain",
+    },
+    {
+      id: 38,
+      title: "🤖 Automata Solver - Theory of Computation Helper",
+      description: "A comprehensive, professional Flask-based web application for solving Theory of Computation problems. Features modern UI with dedicated sections for DFA, NFA, PDA, CFG, Turing Machines, Moore/Mealy machines, and theoretical concepts. Includes 30+ example questions, high-quality diagram generation (300 DPI), state minimization, NFA to DFA conversion, pumping lemma proofs, ambiguity detection with timeout protection, and complete automata visualization. Built for students and educators with professional documentation and responsive design.",
+      tech: ["Python", "Flask", "Theory of Computation", "Automata Theory", "DFA", "NFA", "PDA", "CFG", "Turing Machines", "Graphviz", "HTML5", "CSS3", "JavaScript", "Algorithm Visualization", "Educational Technology"],
+      github: "https://github.com/Umairism/Automata",
+      readme: "https://github.com/Umairism/Automata/blob/main/README.md",
+      live: "https://automata-production-71fb.up.railway.app/",
+      image: imagePlaceholder,
+      color: "from-violet-600 to-purple-700",
+      likes: 0,
+      featured: true,
+      isNew: true,
+      achievement: "🏆 Comprehensive Automata Theory Solver",
+      category: "Educational",
     }
   ];
 
