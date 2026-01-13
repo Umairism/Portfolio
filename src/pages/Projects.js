@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 // Import unique project images
 import codespaceImage from "../Images/CodeSpace.png";
-import portfolioImage from "../Images/1.png";
 import ecommerceImage from "../Images/Ecom.png";
 import slimeTubeImage from "../Images/SlimeTube.png";
 import portalImage from "../Images/portal.png";
