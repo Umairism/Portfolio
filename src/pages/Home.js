@@ -36,6 +36,10 @@ const Home = () => {
                   <span>IndexedDB, Flask, PostgreSQL, MongoDB</span>
                 </div>
                 <div className="highlight-item">
+                  <span className="highlight-icon">🚀</span>
+                  <span>Docker, AWS, Git, Linux Systems</span>
+                </div>
+                <div className="highlight-item">
                   <span className="highlight-icon">🎯</span>
                   <span>Open to backend/platform engineering internships</span>
                 </div>

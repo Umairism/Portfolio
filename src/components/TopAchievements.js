@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../components/TopAchievements.css';
 
 const TopAchievements = () => {
   const achievements = [
@@ -53,6 +54,16 @@ const TopAchievements = () => {
       status: "🆕 New | 🚀 Live",
       gradient: "from-blue-600 to-purple-700",
       impact: "Pure vanilla JS innovation"
+    },
+    {
+      id: 6,
+      title: "🎨 3D Portfolio Experience",
+      description: "Immersive 3D WebGL portfolio with interactive project cards and animations",
+      tech: ["TypeScript", "Three.js", "React Three Fiber", "WebGL"],
+      github: "https://github.com/Umairism/3D_Portfolio",
+      status: "✨ Featured",
+      gradient: "from-purple-500 to-pink-600",
+      impact: "60fps 3D rendering optimized"
     }
   ];
 
