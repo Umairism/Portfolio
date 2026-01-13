@@ -66,6 +66,16 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <a 
+              href="/resume.html" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navbar-link resume-link"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

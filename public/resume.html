@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Umair Hakeem - Software Engineer Resume</title>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-highlight: #f0f9ff;
+            --bg-card: #fafafa;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-tertiary: #64748b;
+            --header-bg: #1e3a8a;
+            --header-text: #ffffff;
+            --header-subtitle: #93c5fd;
+            --header-border: #0ea5e9;
+            --border-color: #e2e8f0;
+            --border-light: #cbd5e1;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-highlight: #1e3a5f;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-tertiary: #94a3b8;
+            --header-bg: #0c1e3f;
+            --header-text: #ffffff;
+            --header-subtitle: #93c5fd;
+            --header-border: #0ea5e9;
+            --border-color: #334155;
+            --border-light: #475569;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-header {
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 30px 40px;
+            border-bottom: 4px solid var(--header-border);
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            color: var(--header-subtitle);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #e0e7ff;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-item strong {
+            color: white;
+        }
+
+        .resume-content {
+            padding: 30px 40px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #0ea5e9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary-box {
+            background: var(--bg-highlight);
+            border-left: 4px solid #0ea5e9;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .summary-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .skill-category-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-items {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item {
+            margin-bottom: 18px;
+            padding-left: 15px;
+            border-left: 2px solid var(--border-light);
+            transition: border-color 0.3s ease;
+        }
+
+        .item-header {
+            margin-bottom: 6px;
+        }
+
+        .item-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .item-date {
+            color: var(--text-tertiary);
+            font-size: 0.85rem;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        .item-company {
+            color: #0ea5e9;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .item-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 6px;
+            font-size: 0.9rem;
+        }
+
+        .item-description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .item-description li {
+            margin-bottom: 3px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .tech-tag {
+            background: #e0f2fe;
+            color: #075985;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid #bae6fd;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .achievement-item {
+            background: var(--bg-secondary);
+            border-left: 3px solid #10b981;
+            padding: 10px 12px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+            transition: background-color 0.3s ease;
+        }
+
+        .achievement-item strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .featured-projects {
+            display: grid;
+            gap: 15px;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 12px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .project-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .project-category {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            font-style: italic;
+        }
+
+        .project-description {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .metric-box {
+            text-align: center;
+            background: var(--bg-highlight);
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #bae6fd;
+            transition: background-color 0.3s ease;
+        }
+
+        .metric-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0369a1;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume-header {
+                padding: 20px 30px;
+            }
+
+            .resume-content {
+                padding: 20px 30px;
+            }
+
+            .section {
+                margin-bottom: 18px;
+                page-break-inside: avoid;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .project-card, .achievement-item {
+                page-break-inside: avoid;
+            }
+
+            .download-btn,
+            .theme-toggle {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resume-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .skills-grid,
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #0ea5e9;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .download-btn:hover {
+            background: #0284c7;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .download-btn {
+                top: 10px;
+                right: 10px;
+                padding: 10px 18px;
+                font-size: 0.85rem;
+            }
+
+            .theme-toggle {
+                top: 10px;
+                left: 10px;
+                padding: 10px 14px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        🌙
+    </button>
+    <a href="#" class="download-btn" onclick="window.print(); return false;">📄 Download PDF</a>
+    
+    <script>
+        // Initialize theme
+        const initTheme = () => {
+            const savedTheme = localStorage.getItem('resumeTheme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        };
+
+        // Toggle theme
+        const toggleTheme = () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('resumeTheme', newTheme);
+            updateThemeIcon(newTheme);
+        };
+
+        // Update theme icon
+        const updateThemeIcon = (theme) => {
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        };
+
+        // Initialize on load
+        initTheme();
+    </script>
+    
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="resume-header">
+            <h1>MUHAMMAD UMAIR HAKEEM</h1>
+            <div class="header-subtitle">Computer Science Undergraduate | Full-Stack Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> iamumair1124@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> +92 332 9981207
+                </div>
+                <div class="contact-item">
+                    <strong>Location:</strong> Islamabad, Pakistan
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong> github.com/Umairism
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="resume-content">
+            <!-- Summary -->
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="summary-box">
+                    <p class="summary-text">
+                        Computer Science undergraduate with <strong>3+ years of hands-on development experience</strong> specializing in 
+                        full-stack web development, backend systems, and AI/ML applications. Successfully delivered <strong>30+ production 
+                        projects</strong> including browser-based IDE, blockchain certificate verification, and cybersecurity tools. 
+                        Proven expertise in React, TypeScript, Python, and Flask with focus on clean architecture, performance optimization, 
+                        and real-world constraints. Currently seeking <strong>backend/platform engineering internships</strong> and junior 
+                        software engineering roles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="section">
+                <h2 class="section-title">Impact Metrics</h2>
+                <div class="metrics">
+                    <div class="metric-box">
+                        <span class="metric-number">30+</span>
+                        <span class="metric-label">Production Projects</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-number">25+</span>
+                        <span class="metric-label">Technologies Mastered</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-number">95%</span>
+                        <span class="metric-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-category-title">Languages</div>
+                        <div class="skill-items">Python, JavaScript, TypeScript, Java, C++, SQL, HTML5, CSS3</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Frontend</div>
+                        <div class="skill-items">React, Next.js, TypeScript, Tailwind CSS, Vite, Monaco Editor, Three.js</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Backend</div>
+                        <div class="skill-items">Node.js, Express, Flask, FastAPI, Django, REST APIs, JWT Authentication</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Databases</div>
+                        <div class="skill-items">PostgreSQL, MongoDB, MySQL, SQLite, IndexedDB, Supabase, SQLAlchemy</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">DevOps & Tools</div>
+                        <div class="skill-items">Git, Docker, Netlify, Vercel, Railway, Redis, WebWorkers, WebRTC</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Specialized</div>
+                        <div class="skill-items">AI/ML (PyTorch, Transformers), Blockchain, OpenCV, Scapy, Cybersecurity</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <div class="item-title">Python & Computer Science Instructor</div>
+                            <div class="item-date">Dec-2023 – Sept-2024</div>
+                        </div>
+                        <div class="item-company">Benchmark School, Islamabad</div>
+                    </div>
+                    <div class="item-description">
+                        <ul>
+                            <li>Teaching Python programming and Computer Science fundamentals to 30+ students with focus on practical, hands-on learning</li>
+                            <li>Designed interactive curriculum covering data structures, algorithms, OOP, and web development basics</li>
+                            <li>Mentored students in building real-world projects including web applications, automation scripts, and data analysis tools</li>
+                            <li>Improved student engagement by 40% through project-based learning approach</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <div class="item-title">Freelance Programming Tutor & Developer</div>
+                            <div class="item-date">2023 – Present</div>
+                        </div>
+                        <div class="item-company">Fiverr (Remote)</div>
+                    </div>
+                    <div class="item-description">
+                        <ul>
+                            <li>Providing personalized tutoring in Java, C++, and Python with specialization in GUI/CUI applications, OOP, and Data Structures</li>
+                            <li>Maintained <strong>100% client satisfaction rating</strong> with 50+ completed orders through clear explanations and practical examples</li>
+                            <li>Delivered custom software solutions including desktop applications, automation scripts, and web development projects</li>
+                            <li>Average project turnaround: 48 hours with consistent 5-star reviews</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <div class="item-title">Software Development Intern</div>
+                            <div class="item-date">2023</div>
+                        </div>
+                        <div class="item-company">Air Tech Solutions, Islamabad</div>
+                    </div>
+                    <div class="item-description">
+                        <ul>
+                            <li>Developed React-based e-commerce frontend with real-time product filtering and advanced search functionality</li>
+                            <li>Improved page load times by <strong>15%</strong> through code splitting, lazy loading, and image optimization techniques</li>
+                            <li>Implemented responsive design patterns ensuring consistent UX across mobile, tablet, and desktop devices</li>
+                            <li>Collaborated with backend team using REST APIs for product catalog and user authentication integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <div class="item-title">Technical Support Assistant</div>
+                            <div class="item-date">2022</div>
+                        </div>
+                        <div class="item-company">MindRidge, Islamabad</div>
+                    </div>
+                    <div class="item-description">
+                        <ul>
+                            <li>Resolved hardware and software issues for 20+ daily client queries with 95% first-contact resolution rate</li>
+                            <li>Boosted customer satisfaction by <strong>25%</strong> through proactive communication and efficient problem resolution</li>
+                            <li>Documented technical solutions creating knowledge base that reduced recurring tickets by 30%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <div class="item-title">Bachelor of Science in Computer Sciences</div>
+                            <div class="item-date">2023 – Present</div>
+                        </div>
+                        <div class="item-company">National University of Modern Languages (NUML), Islamabad</div>
+                    </div>
+                    <div class="item-description">
+                        <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Systems, Software Engineering, 
+                        Web Technologies, Object-Oriented Programming, Computer Networks, Operating Systems
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <div class="item-title">Intermediate in Engineering</div>
+                            <div class="item-date">2020 – 2022</div>
+                        </div>
+                        <div class="item-company">Hope Science College, Islamabad</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Projects -->
+            <div class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="featured-projects">
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">CodeSpace - Browser-Based IDE</div>
+                            <div class="project-category">Web Development</div>
+                        </div>
+                        <div class="project-description">
+                            Professional web-based development environment supporting Python, JavaScript, HTML/CSS, and React. 
+                            Integrated Monaco Editor (VS Code engine) with real-time code execution via WebWorkers, 50MB+ file 
+                            storage using IndexedDB, and live preview with iframe isolation. Solved challenges: custom Python 
+                            interpreter integration via WASM, in-browser JSX transpilation, and prevented main thread blocking 
+                            during execution.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Monaco Editor</span>
+                            <span class="tech-tag">Python Interpreter</span>
+                            <span class="tech-tag">WebWorkers</span>
+                            <span class="tech-tag">IndexedDB</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Blockchain Certificate Verification System</div>
+                            <div class="project-category">Blockchain</div>
+                        </div>
+                        <div class="project-description">
+                            Enterprise-grade certificate verification platform using custom SHA-256 blockchain implementation. 
+                            React + TypeScript frontend with Flask backend, SQLAlchemy ORM, and JWT role-based authentication 
+                            (admin/issuer/verifier). Built custom blockchain to avoid Ethereum gas fees while maintaining 
+                            immutability. Optimized chain validation with merkle trees after performance degraded with 10k+ blocks.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Custom Blockchain</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Portable AI Agent</div>
+                            <div class="project-category">AI & Machine Learning</div>
+                        </div>
+                        <div class="project-description">
+                            Privacy-first offline AI assistant with Flask backend running local Transformers models (distilgpt2). 
+                            Implemented FAISS for vector search, conversation storage in SQLite, and zero external API calls. 
+                            Achieved 3x speedup through batching/caching and reduced memory footprint to ~50MB using lazy model 
+                            loading. Solved CPU inference challenges and context window limitations.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Aircrack-NG GUI</div>
+                            <div class="project-category">Cybersecurity</div>
+                        </div>
+                        <div class="project-description">
+                            Modern interface for Aircrack-NG wireless security tools. React + TypeScript with Material-UI, FastAPI 
+                            async backend, Redis task queue for background processing. Supports pcap upload, WPA handshake capture, 
+                            and dictionary attacks. Implemented Server-Sent Events for real-time command output streaming and 
+                            chunked upload with resume for 500MB+ pcap files.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Material-UI</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Aircrack-NG</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">LinuxOS Desktop Environment</div>
+                            <div class="project-category">Web Development</div>
+                        </div>
+                        <div class="project-description">
+                            Web-based desktop OS interface using pure vanilla JavaScript, HTML5, CSS3 - zero frameworks. 
+                            Custom window manager with drag/resize, macOS-style dock with CSS transform magnification, 
+                            built-in apps (terminal, file manager, calculator). Optimized for 60fps with will-change and 
+                            transform optimizations. Event delegation for performance with multiple windows.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vanilla JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Window Management</span>
+                            <span class="tech-tag">File System API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">SlimeTube - Video Streaming Platform</div>
+                            <div class="project-category">Media & Entertainment</div>
+                        </div>
+                        <div class="project-description">
+                            YouTube-like platform with React + TypeScript, Tailwind CSS, and Framer Motion. Fully client-side 
+                            using IndexedDB for 50MB+ video storage. Implemented chunk processing for upload progress tracking, 
+                            Blob URLs for playback with proper memory cleanup, and virtual scrolling for 100+ video performance.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Framer Motion</span>
+                            <span class="tech-tag">IndexedDB</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Advanced Penetration Testing Framework</div>
+                            <div class="project-category">Cybersecurity</div>
+                        </div>
+                        <div class="project-description">
+                            Unified security assessment framework with Scapy for packet crafting, multi-threaded TCP/SYN scanning 
+                            (10x faster), CVE database integration, and automated HTML reporting. Implemented rate limiting 
+                            (1000 ports/sec), fuzzy CVE matching with Levenshtein distance, and streaming write for large scan 
+                            results to prevent memory issues.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scapy</span>
+                            <span class="tech-tag">Multi-threading</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">CVE Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Drone Surveillance System</div>
+                            <div class="project-category">IoT & Computer Vision</div>
+                        </div>
+                        <div class="project-description">
+                            IoT-based surveillance drone with Raspberry Pi running Python + OpenCV. Real-time video streaming 
+                            via WebRTC (<500ms latency), YOLO Tiny object detection at 15fps, DroneKit autopilot control, 
+                            and GPS tracking. Optimized battery life through adaptive bitrate and hardware H.264 encoding.
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Key Achievements -->
+            <div class="section">
+                <h2 class="section-title">Key Achievements & Impact</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <strong>CodeSpace IDE:</strong> Zero-setup development environment eliminates installation barriers, 
+                        enabling instant coding from any device with browser
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Blockchain System:</strong> Eliminates certificate fraud through immutable verification, 
+                        saving universities thousands in verification costs
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Performance Expert:</strong> Consistently optimize applications achieving 15-70% improvements 
+                        through code splitting, lazy loading, caching strategies
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Security Focus:</strong> Built multiple cybersecurity tools (Aircrack GUI, Pentest Framework) 
+                        demonstrating deep understanding of network security
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Full-Stack Versatility:</strong> Equal proficiency in frontend (React, TypeScript) and 
+                        backend (Python, Flask, Node.js) with 30+ production projects
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Real-World Impact:</strong> 25% customer satisfaction increase at MindRidge, 40% student 
+                        engagement improvement through project-based teaching
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Technical Innovation:</strong> Created custom blockchain, integrated WASM Python interpreter, 
+                        built vanilla JS desktop OS demonstrating low-level understanding
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Client Success:</strong> 100% Fiverr satisfaction rating with 50+ orders, average 48-hour 
+                        turnaround time with consistent 5-star reviews
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Problem Solver:</strong> Solved complex challenges: CPU inference optimization (3x speedup), 
+                        WebRTC streaming latency, blockchain validation performance
+                    </div>
+                    <div class="achievement-item">
+                        <strong>System Architecture:</strong> Designed scalable systems handling 1000+ users with proper 
+                        database optimization, caching, and load management
+                    </div>
+                    <div class="achievement-item">
+                        <strong>AI/ML Expertise:</strong> Implemented local AI models, computer vision applications, 
+                        object detection systems demonstrating ML engineering skills
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Rapid Learner:</strong> Mastered 25+ technologies across web dev, cybersecurity, AI/ML, 
+                        IoT demonstrating quick adaptation to new tech stacks
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div class="section">
+                <h2 class="section-title">Additional Competencies</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <strong>Architecture:</strong> Clean code, maintainable structure, proper separation of concerns, 
+                        documented decisions, scalable design patterns
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Performance:</strong> Code optimization, lazy loading, caching strategies, database indexing, 
+                        memory management, 60fps animations
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Security:</strong> JWT authentication, role-based access, SQL injection prevention, 
+                        input validation, secure data handling
+                    </div>
+                    <div class="achievement-item">
+                        <strong>DevOps:</strong> CI/CD pipelines, Docker containerization, serverless deployment, 
+                        database migrations, monitoring, logging
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Collaboration:</strong> Git version control, code reviews, technical documentation, 
+                        team leadership, mentoring, agile methodologies
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Design:</strong> Adobe Photoshop, Illustrator, responsive design, UI/UX principles, 
+                        accessibility standards, mobile-first approach
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community & Leadership -->
+            <div class="section">
+                <h2 class="section-title">Community & Leadership</h2>
+                <div class="item-description">
+                    <ul>
+                        <li>Led development teams in academic and open-source collaborative projects</li>
+                        <li>Active participant in tech community events, workshops, and hackathons in Islamabad</li>
+                        <li>Mentoring 30+ students in Python, CS fundamentals, and web development at Benchmark School</li>
+                        <li>Contributing to open-source projects and maintaining 30+ public repositories on GitHub</li>
+                        <li>Teaching programming concepts through practical, hands-on project-based approach</li>
+                        <li>Community service initiatives leveraging technology to solve local problems</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
