@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
+  padding-top: 6rem;
   background: transparent;
   position: relative;
   z-index: 2;
@@ -30,6 +31,7 @@
   align-items: center;
   gap: 1.5rem;
   position: relative;
+  margin-top: 1rem;
 }
 
 .profile-image {
@@ -43,6 +45,7 @@
   box-shadow: var(--shadow-2xl), var(--shadow-glow-primary);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  z-index: 1;
   animation: floatProfile 6s ease-in-out infinite;
 }
 
