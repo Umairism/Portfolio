@@ -1,0 +1,231 @@
+/* Contact Page Styles */
+.contact-section {
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.contact-container-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-section .section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-section .section-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-intro {
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-intro p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.social-links {
+  margin-bottom: 3rem;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: circle;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  transition: transform 0.3s ease;
+}
+
+.social-item:hover {
+  transform: translateY(-5px);
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  border-radius: 16px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid var(--border-color);
+  background: var(--surface-color);
+  min-width: 100px;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.social-link.email:hover {
+  color: #ea4335;
+  border-color: #ea4335;
+  box-shadow: 0 10px 20px rgba(234, 67, 53, 0.2);
+}
+
+.social-link.github:hover {
+  color: #333;
+  border-color: #333;
+  box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+}
+
+.social-link.linkedin:hover {
+  color: #0077b5;
+  border-color: #0077b5;
+  box-shadow: 0 10px 20px rgba(0, 119, 181, 0.2);
+}
+
+.social-link.twitter:hover {
+  color: #1da1f2;
+  border-color: #1da1f2;
+  box-shadow: 0 10px 20px rgba(29, 161, 242, 0.2);
+}
+
+.social-link span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contact-form-section {
+  text-align: left;
+}
+
+.form-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  background: var(--surface-color);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  border-color: var(--border-hover);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--background-dark);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  background: var(--surface-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  padding: 0.875rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}

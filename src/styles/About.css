@@ -1,0 +1,46 @@
+/* About Page Specific Styles */
+.about-sections {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-section-item {
+  background: var(--surface-color);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-section-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+  background: var(--surface-hover);
+}
+
+.about-section-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.about-section-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-content > * {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.about-content > *:nth-child(1) { animation-delay: 0.1s; }
+.about-content > *:nth-child(2) { animation-delay: 0.2s; }
+.about-content > *:nth-child(3) { animation-delay: 0.3s; }
+.about-content > *:nth-child(4) { animation-delay: 0.4s; }
+
+.about-cta {
+  margin-top: 2rem;
+}

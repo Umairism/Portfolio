@@ -16,28 +16,28 @@ const Home = () => {
                 className="profile-image"
               />
               <h1 className="name-title">Muhammad Umair Hakeem</h1>
-              <h2 className="role-subtitle">Full-Stack Developer & Computer Science Student</h2>
+              <h2 className="role-subtitle">Computer Science Undergraduate</h2>
             </div>
             
             <div className="intro-section">
               <p className="intro-text">
-                Passionate and dedicated final-year Computer Science student with a deep love for 
-                technology, programming, and problem-solving. Specializing in full-stack web 
-                development with expertise in React.js, MongoDB, and Node.js.
+                Final-year Computer Science student focused on full-stack development and backend systems. 
+                I build practical applications, automation tools, and developer utilities with an emphasis 
+                on clean architecture and real-world constraints.
               </p>
               
               <div className="key-highlights">
                 <div className="highlight-item">
-                  <span className="highlight-icon">🎓</span>
-                  <span>Final Year CS Student</span>
-                </div>
-                <div className="highlight-item">
                   <span className="highlight-icon">💻</span>
-                  <span>Full-Stack Developer</span>
+                  <span>React + TypeScript, Node.js, Python</span>
                 </div>
                 <div className="highlight-item">
-                  <span className="highlight-icon">🚀</span>
-                  <span><b>React.js</b> & <b>Python</b> Specialist</span>
+                  <span className="highlight-icon">🔧</span>
+                  <span>IndexedDB, Flask, PostgreSQL, MongoDB</span>
+                </div>
+                <div className="highlight-item">
+                  <span className="highlight-icon">🎯</span>
+                  <span>Open to backend/platform engineering internships</span>
                 </div>
               </div>
             </div>
@@ -45,17 +45,17 @@ const Home = () => {
             <div className="cta-section">
               <div className="cta-buttons">
                 <Link to="/projects" className="btn-primary">
-                  View My Projects
+                  View Projects
                 </Link>
-                <Link to="/about" className="btn-secondary">
-                  Learn More About Me
-                </Link>
+                <a href="/resume.pdf" download className="btn-secondary">
+                  Download Resume
+                </a>
               </div>
               
               <div className="quick-links">
                 <Link to="/skills" className="quick-link">
                   <span className="quick-link-icon">⚡</span>
-                  <span>Skills</span>
+                  <span>Tech Stack</span>
                 </Link>
                 <Link to="/contact" className="quick-link">
                   <span className="quick-link-icon">📧</span>
