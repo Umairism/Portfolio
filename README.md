@@ -1,265 +1,206 @@
 # Portfolio Website
 
-A modern, responsive portfolio website showcasing full-stack development skills and innovative projects across web development, cybersecurity, blockchain, AI/ML, mobile applications, and healthcare IoT.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://umairhakeem.netlify.app)
+[![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**Live Demo**: [View Live](https://umairhakeem.netlify.app)  
-**Repository**: [GitHub](https://github.com/Umairism/Portfolio)
+> Full-stack engineer building production-ready solutions across web, blockchain, AI/ML, and cybersecurity.
 
-## Overview
+**[🚀 View Portfolio](https://umairhakeem.netlify.app)** • **[💼 LinkedIn](https://www.linkedin.com/in/umairsim/)** • **[📧 Contact](mailto:malikumairhakim@outlook.com)**
 
-This portfolio demonstrates my expertise in full-stack development through 37+ diverse projects. From browser-based IDEs to blockchain verification systems, AI-powered health monitoring to enterprise management solutions, each project represents a solution to real-world challenges using modern technologies.
+---
 
-## Featured Projects
+## 🎯 Quick Links
 
-### CodeSpace - Professional Browser IDE
-Complete development environment running entirely in the browser with zero setup required.
-- **Technologies**: React 18, TypeScript, Monaco Editor, Python Interpreter, Vite
-- **Features**: Real-time code execution, IntelliSense, live preview, file management, project templates
-- **Repository**: [codespace](https://github.com/Umairism/codespace)
-- **Live Demo**: [webcodespace.netlify.app](https://webcodespace.netlify.app)
+**Featured Work** → [CodeSpace](#codespace) • [HealSense](#healsense) • [Blockchain Certs](#blockchain-certs) • [PenTest Framework](#pentest)
 
-### HealSense - Deep Learning Health Surveillance (FYP)
-AI-powered smart health surveillance and prediction model with IoT integration.
-- **Technologies**: TypeScript, Python, React, Flutter, TensorFlow, Arduino, Raspberry Pi, Kubernetes
-- **Features**: Real-time health monitoring, ML predictions, IoT sensors, mobile app, observability stack
-- **Repository**: [FYP-Project](https://github.com/Umairism/FYP-Project)
+**Tech Stack** → React • TypeScript • Python • Node.js • Ethereum • TensorFlow • Docker
 
-### AI-Powered Blockchain Certificate Verification System
-Enterprise-grade platform combining AI automation with Ethereum blockchain for certificate verification.
-- **Technologies**: React, TypeScript, Flask, Python, Ethereum, Solidity, IPFS, FAISS, OCR, NLP
-- **Features**: AI fraud detection, immutable blockchain storage, multi-role dashboards, MetaMask integration
-- **Repository**: [blockchain-cert-system](https://github.com/Umairism/blockchain-cert-system)
+---
 
-### The Chronicle - News Aggregation Platform
-Modern news aggregation and publication platform with CMS capabilities.
-- **Technologies**: React, TypeScript, Supabase, PostgreSQL, Express.js, NewsAPI, GNews
-- **Features**: Dual news APIs, admin dashboard, dark/light mode, smart categorization, RLS security
-- **Repository**: [The-Chronicle](https://github.com/Umairism/The-Chronicle)
+## 🚀 Featured Projects
 
-### LinuxOS Desktop Environment
-Web-based desktop operating system with macOS-inspired interface and full functionality.
-- **Technologies**: Vanilla JavaScript, HTML5, CSS3, Window Management APIs
-- **Features**: Application dock, built-in apps (browser, calculator, terminal), dynamic wallpapers
-- **Repository**: [linuxos-desktop](https://github.com/umairism/linuxos-desktop)
-- **Live Demo**: [linuxos.netlify.app](https://linuxos.netlify.app)
+<div id="codespace"></div>
 
-### Advanced Penetration Testing Framework
-Professional-grade security testing framework with modern GUI interface.
-- **Technologies**: Python, Scapy, Tkinter, Multi-threading, Cryptography
-- **Features**: Network scanning, vulnerability assessment, payload generation, CTF mode, professional reporting
-- **Repository**: [advanced-pentest-framework](https://github.com/Umairism/advanced-pentest-framework)
+### 🖥️ [CodeSpace](https://github.com/Umairism/codespace) • [Live Demo](https://webcodespace.netlify.app)
+**Zero-setup browser IDE with Monaco Editor and real-time Python execution.**  
+*Like VSCode but runs entirely client-side—no servers, instant dev environment.*
 
-## Project Categories
+![CodeSpace Screenshot](./src/Images/CodeSpace.png)
 
-The portfolio includes projects across multiple domains:
+---
 
-- **Web Development** (8 projects): Full-stack applications, e-commerce platforms, news aggregation, task management
-- **Cybersecurity** (3 projects): Penetration testing frameworks, wireless security tools, DDoS simulation
-- **AI & Machine Learning** (3 projects): Computer vision systems, portable AI agents, drone surveillance
-- **Blockchain** (3 projects): Certificate verification systems, AI-blockchain integration, custom implementations
-- **Educational** (4 projects): School management systems, student portals, teacher platforms
-- **Healthcare & IoT** (1 project): HealSense deep learning health monitoring system
-- **Mobile & Cross-Platform** (2 projects): React Native applications, payment simulation demos
-- **3D & Graphics** (2 projects): Three.js experiences, interactive proposals, mathematical animations
-- **Business & Productivity** (5 projects): Office management, inventory systems, medical stores, outsourcing platforms
-- **Media & Entertainment** (3 projects): Video streaming platforms, music recognition apps, celebration websites
-- **Desktop Applications** (2 projects): USB security tools, Python demonstration projects
+<div id="healsense"></div>
 
-## Technical Stack
+### 🏥 [HealSense](https://github.com/Umairism/FYP-Project)
+**IoT health surveillance with TensorFlow predictions on Raspberry Pi clusters.**  
+*Final Year Project: ML-powered vitals monitoring with Flutter mobile dashboard.*
 
-### Frontend Development
-```javascript
-const technologies = {
-  core: ['React 18.2.0', 'JavaScript ES6+', 'TypeScript', 'HTML5', 'CSS3'],
-  styling: ['Tailwind CSS', 'CSS Modules', 'Responsive Design', 'shadcn/ui'],
-  frameworks: ['React.js', 'Next.js 13', 'Three.js', 'Vite'],
-  backend: ['Node.js', 'Python', 'Flask', 'FastAPI', 'Express.js', 'ASP.NET'],
-  databases: ['MongoDB', 'SQLite', 'Supabase', 'PostgreSQL', 'SQL Server'],
-  blockchain: ['Ethereum', 'Solidity', 'Web3.py', 'IPFS', 'Custom Implementation'],
-  ai_ml: ['TensorFlow', 'PyTorch', 'OpenCV', 'FAISS', 'OCR', 'NLP'],
-  iot: ['Arduino', 'Raspberry Pi', 'DroneKit', 'GPS', 'WebRTC'],
-  mobile: ['React Native', 'Flutter', 'Cross-Platform Development'],
-  devops: ['Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'GitHub Actions'],
-  tools: ['Git', 'Vite', 'Webpack', 'Monaco Editor'],
-  deployment: ['Netlify', 'Vercel', 'GitHub Pages']
-};
+---
+
+<div id="blockchain-certs"></div>
+
+### 🔐 [Blockchain Certificate Verification](https://github.com/Umairism/blockchain-cert-system)
+**Ethereum-backed credential verification with AI fraud detection (FAISS + OCR).**  
+*Tamper-proof diplomas stored on-chain with MetaMask integration.*
+
+![Blockchain Certificate System](./src/Images/lockchain-cert.png)
+
+---
+
+<div id="pentest"></div>
+
+### 🛡️ [Advanced PenTest Framework](https://github.com/Umairism/advanced-pentest-framework)
+**Professional security toolkit—network scanning, payload generation, vulnerability reports.**  
+*Python-based framework with GUI for ethical hacking and CTF challenges.*
+
+![PenTest Framework](./src/Images/Aircrack.png)
+
+---
+
+### 📰 [The Chronicle](https://github.com/Umairism/The-Chronicle)
+**News aggregation + CMS with Supabase backend and multi-source feeds.**
+
+### 🖱️ [LinuxOS Desktop](https://github.com/umairism/linuxos-desktop) • [Live](https://linuxos.netlify.app)
+**macOS-inspired web desktop with functional apps—browser, terminal, calculator.**
+
+![LinuxOS Desktop](./src/Images/LinuxOS-Desktop.png)
+
+---
+
+## 💼 More Projects
+
+<details>
+<summary><b>Web Development (8 projects)</b></summary>
+
+- **[ModernShop E-Commerce](https://github.com/Umairism/e-commerce)** • [Demo](https://myecoms.netlify.app) — Serverless shopping cart with Netlify Functions
+- **[WeddingShare](https://github.com/Umairism/WeddingShare)** • [Demo](https://wedding-share-vert.vercel.app) — Next.js event media upload with JWT auth
+- **[SlimeTube](https://github.com/Umairism/SlimeTube)** • [Demo](https://flixii.netlify.app/) — Video streaming platform with IndexedDB persistence
+- **Taskify, TaskMaster, Postit** — Task management apps with varied tech stacks
+
+</details>
+
+<details>
+<summary><b>Cybersecurity (3 projects)</b></summary>
+
+- **[Aircrack-NG GUI](https://github.com/Umairism/Aircrack_GUI)** — Web interface for wireless security auditing with FastAPI backend
+- **DDoS Simulator** — Educational tool for understanding network attacks
+
+</details>
+
+<details>
+<summary><b>AI & ML (3 projects)</b></summary>
+
+- **[Portable AI Agent](https://github.com/Umairism/Porable-Ai-Agent)** — Offline-capable AI with PyTorch, privacy-first design
+- **[Surveillance Drone](https://github.com/Umairism/Drone-System)** — Computer vision + DroneKit for autonomous flight paths
+
+</details>
+
+<details>
+<summary><b>Business & Enterprise (5 projects)</b></summary>
+
+- **[Office Management System](https://github.com/Umairism/OfficeManagementSystem)** — ASP.NET employee management with N-tier architecture
+- **Medical Store Management** — Healthcare inventory with comprehensive reporting
+- **Benchmark School System** — Educational platform with analytics
+- **Teachers Club** — Course management and student tracking
+
+</details>
+
+**[📂 View All 37+ Projects](https://umairhakeem.netlify.app)**
+
+---
+
+## 🛠️ Tech Stack
+
+```typescript
+{
+  frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Three.js"],
+  backend: ["Node.js", "Python", "Flask", "FastAPI", ".NET"],
+  databases: ["MongoDB", "PostgreSQL", "Supabase", "SQL Server"],
+  blockchain: ["Ethereum", "Solidity", "Web3", "IPFS"],
+  aiml: ["TensorFlow", "PyTorch", "OpenCV", "FAISS"],
+  iot: ["Arduino", "Raspberry Pi", "DroneKit"],
+  mobile: ["React Native", "Flutter"],
+  devops: ["Docker", "Kubernetes", "GitHub Actions", "Prometheus"],
+  deployment: ["Netlify", "Vercel"]
+}
 ```
 
-### Architecture Features
-- **Component-based Design**: Modular React components with reusable patterns
-- **Responsive Layout**: Mobile-first approach supporting all screen sizes
-- **Performance Optimization**: Code splitting, lazy loading, image optimization
-- **Category Filtering**: Dynamic project organization by technology and domain
-- **Interactive Elements**: Smooth animations, hover effects, project showcases
+---
 
-## Getting Started
-
-### Prerequisites
-- Node.js (version 16.0.0 or higher)
-- npm or yarn package manager
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Umairism/Portfolio.git
-   cd Portfolio
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-4. Open your browser and navigate to `http://localhost:3000`
-
-### Build for Production
+## 🚀 Quick Start
 
 ```bash
+# Clone the repo
+git clone https://github.com/Umairism/Portfolio.git
+cd Portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server (http://localhost:3000)
+npm start
+
+# Build for production
 npm run build
 ```
 
-This creates an optimized production build in the `build` folder, ready for deployment to any static hosting service.
+**Requirements:** Node.js 16+
 
+---
 
-## Key Projects
+## 📈 Performance
 
-### Web Development
+- ⚡ Lighthouse score: **95+** across all metrics
+- 🌐 Mobile-responsive with sub-2s load times on 3G
+- ♿ WCAG accessibility compliant
 
-**ModernShop E-Commerce Platform**
-Complete full-stack e-commerce solution with serverless backend architecture.
-- Technologies: React.js, Netlify Functions, Node.js, Serverless API
-- Features: Product catalog, shopping cart, search functionality, session management
-- Links: [GitHub](https://github.com/Umairism/e-commerce) | [Live Demo](https://myecoms.netlify.app)
+---
 
-**The Chronicle - News Platform**
-Modern news aggregation and publication platform with complete CMS.
-- Technologies: React, TypeScript, Supabase, PostgreSQL, Express.js
-- Features: Dual news APIs, admin dashboard, dark/light mode, RLS security
-- Links: [GitHub](https://github.com/Umairism/The-Chronicle)
+## 📝 Important Notes
 
-**WeddingShare - Event Photo Sharing**
-Full-stack Next.js application for secure event media uploads.
-- Technologies: Next.js 13, TypeScript, Supabase, JWT, shadcn/ui
-- Features: Drag-and-drop upload, admin dashboard, rate limiting, auto-organization
-- Links: [GitHub](https://github.com/Umairism/WeddingShare) | [Live Demo](https://wedding-share-vert.vercel.app)
+### 🏷️ **GitHub Topics**
+To improve discoverability, add these topics to your repository:
+```
+portfolio, react, typescript, fullstack, nodejs, python, blockchain, 
+ai-ml, iot, cybersecurity, web-development, developer-portfolio
+```
+*Go to: Repository Settings → Topics → Add topics*
 
-**SlimeTube - Video Streaming Platform**
-YouTube-like platform with modern UI and persistent storage.
-- Technologies: React 18, TypeScript, Vite, Tailwind CSS, IndexedDB
-- Features: Video upload/playback, user management, wishlist, comprehensive testing
-- Links: [GitHub](https://github.com/Umairism/SlimeTube) | [Live Demo](https://flixii.netlify.app/)
+### 📸 **Project Screenshots**
+Each project repo should include:
+- Hero screenshot in README (use real screenshots, not placeholders)
+- Live demo badge
+- Tech stack badges
 
-### Cybersecurity
-
-**Advanced Penetration Testing Framework**
-Professional-grade security testing tool with modern GUI interface.
-- Technologies: Python, Scapy, Tkinter, Multi-threading, Cryptography
-- Features: Network scanning, vulnerability assessment, payload generation, professional reporting
-- Repository: [GitHub](https://github.com/Umairism/advanced-pentest-framework)
-
-**Aircrack-NG GUI**
-Modern web interface for wireless security auditing using Aircrack-NG.
-- Technologies: React, TypeScript, Material-UI, FastAPI, SQLAlchemy
-- Features: User authentication, file upload, job management, real-time dashboard
-- Repository: [GitHub](https://github.com/Umairism/Aircrack_GUI)
-
-### AI & Machine Learning
-
-**Portable AI Agent**
-Self-contained, offline-capable AI assistant with privacy-first design.
-- Technologies: Python, PyTorch, Transformers, Machine Learning, Local Storage
-- Features: Self-learning capabilities, offline operation, privacy protection
-- Repository: [GitHub](https://github.com/Umairism/Porable-Ai-Agent)
-
-**Surveillance Drone System**
-Advanced IoT project with computer vision and real-time streaming capabilities.
-- Technologies: Python, OpenCV, Flask, DroneKit, WebRTC, GPS
-- Features: Real-time video streaming, GPS tracking, automated flight paths
-- Repository: [GitHub](https://github.com/Umairism/Drone-System)
-
-### Healthcare & IoT
-
-**HealSense - Deep Learning Health Surveillance**
-Final Year Project implementing AI-powered health monitoring system.
-- Technologies: TypeScript, Python, TensorFlow, Arduino, Raspberry Pi, Kubernetes
-- Features: Real-time health monitoring, ML predictions, mobile app, observability stack
-- Repository: [GitHub](https://github.com/Umairism/FYP-Project)
-
-### Business & Enterprise
-
-**Office Management System**
-Professional employee management solution with .NET Framework.
-- Technologies: ASP.NET, C#, SQL Server, Bootstrap 5, N-Tier Architecture
-- Features: CRUD operations, dashboard statistics, professional design patterns
-- Repository: [GitHub](https://github.com/Umairism/OfficeManagementSystem)
-
-### Additional Notable Projects
-
-- **Student Portal**: Educational management system for course and grade tracking
-- **Medical Store Management**: Healthcare inventory system with comprehensive reporting
-- **Benchmark School System**: Modern educational platform with analytics and community features
-- **Teachers Club**: Comprehensive course management and student tracking platform
-
-## Performance
-
-The portfolio is optimized for performance and accessibility:
-- Lighthouse scores consistently above 95 for Performance, Accessibility, Best Practices, and SEO
-- Page load times under 2 seconds on 3G networks
-- Mobile-responsive design supporting all screen sizes
-- Core Web Vitals metrics in the green zone
-
-## Development
-
-### Code Quality
-- ESLint for consistent code style and error detection
-- Prettier for automated code formatting
-- Modern JavaScript (ES6+) features throughout
-- Component-based architecture for maintainability
-
-### Available Scripts
-
-**Development**
-```bash
-npm start          # Start development server
-npm test           # Run test suite
-npm run build      # Create production build
-npm run eject      # Eject from Create React App (irreversible)
+**Example:**
+```markdown
+![App Screenshot](./screenshots/hero.png)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://your-demo.com)
 ```
 
-## Contributing
+---
 
-While this is a personal portfolio, feedback and suggestions are welcome. If you'd like to contribute:
+## 📞 Contact
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
+**Available for freelance & full-time roles** in full-stack development, blockchain, and AI/ML.
 
-## License
+📧 [malikumairhakim@outlook.com](mailto:malikumairhakim@outlook.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/umairsim/)  
+🐙 [GitHub](https://github.com/Umairism)
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
 
-## Contact
+## 📄 License
 
-**Umair Hakim**
-- Email: [Contact](mailto:malikumairhakim@outlook.com)
-- LinkedIn: [linkedin](https://www.linkedin.com/in/umairsim/)
-- GitHub: [Github](https://github.com/Umairism)
-- Portfolio: [View](https://umairhakeem.netlify.app)
+MIT License - see [LICENSE](LICENSE) for details.
 
-## Professional Services
+---
 
-Available for freelance and contract work:
-- Full-stack web development
-- React.js and modern frontend development
-- Python backend development and APIs
-- Blockchain and cryptocurrency projects
-- Cybersecurity tools and applications
-- Technical consultation and code reviews
+<div align="center">
+
+**⭐ Star this repo if you found it helpful!**
+
+*Made with ❤️ by [Umair Hakim](https://umairhakeem.netlify.app)*
+
+</div>
