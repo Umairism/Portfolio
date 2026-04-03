@@ -4,6 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const resumePath = `${process.env.PUBLIC_URL || ''}/resume.html`;
+  const resumeHref = `${window.location.origin}${resumePath}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,7 +70,7 @@ const Navbar = () => {
           </li>
           <li>
             <a 
-              href="/resume.html" 
+              href={resumeHref}
               target="_blank"
               rel="noopener noreferrer"
               className="navbar-link resume-link"

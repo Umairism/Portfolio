@@ -170,3 +170,31 @@
   outline: 3px solid rgba(10, 100, 118, 0.35);
   outline-offset: 2px;
 }
+
+@media (max-width: 980px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-title {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+  }
+
+  .achievements-subtitle {
+    font-size: 0.94rem;
+  }
+
+  .achievement-gradient {
+    min-height: 0;
+  }
+
+  .achievement-title {
+    font-size: 1.05rem;
+  }
+}

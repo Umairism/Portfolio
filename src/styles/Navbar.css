@@ -56,8 +56,20 @@
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.navbar-list::-webkit-scrollbar-thumb {
+  background: rgba(73, 90, 107, 0.35);
+  border-radius: 999px;
 }
 
 .navbar-link {
