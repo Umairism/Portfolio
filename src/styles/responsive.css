@@ -1,388 +1,92 @@
-/* Responsive Media Queries */
-
-/* Mobile - Small Screens */
-@media (max-width: 768px) {
-  .navbar-container {
-    padding: 0 1rem;
-  }
-  
-  .navbar-list {
-    gap: 1rem;
-  }
-  
-  .navbar-link {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  section {
-    padding: 3rem 1rem;
-  }
-  
-  .home-page {
-    padding: 1.5rem;
-    padding-top: 5rem;
-  }
-  
-  .home-content {
-    gap: 2.5rem;
-  }
-  
-  .profile-section {
-    margin-top: 0.5rem;
-  }
-  
-  .profile-image {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .name-title {
-    font-size: clamp(2.2rem, 6vw, 3rem);
-  }
-  
-  .role-subtitle {
-    font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-  }
-  
-  .intro-text {
-    font-size: 1.1rem;
-    line-height: 1.65;
-  }
-  
-  .key-highlights {
-    gap: 1.25rem;
-    flex-wrap: wrap;
-  }
-  
-  .highlight-item {
-    padding: 0.875rem 1.25rem;
-    font-size: 0.95rem;
-    flex: 1 1 calc(50% - 0.625rem);
-    min-width: 200px;
-  }
-  
-  .cta-buttons {
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .btn-primary,
-  .btn-secondary {
-    flex: 1;
-    max-width: 200px;
-    justify-content: center;
-  }
-  
-  .about-sections {
-    gap: 1.5rem;
-  }
-  
-  .about-section-item {
-    padding: 1.5rem;
-  }
-  
-  .projects-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .project-card {
-    padding: 1.5rem;
-  }
-  
-  .contact-list {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+/* Responsive */
+@media (max-width: 1120px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .about-section,
-  .contact-section {
-    padding: 3rem 1.5rem;
-    margin: 1rem 0;
-    align-items: center;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .intro-paragraph {
-    font-size: 1.1rem !important;
-  }
-
-  .contact-list {
-    gap: 1rem;
-  }
-
-  .social-link {
-    padding: 0.75rem;
-    min-width: 60px;
-  }
-
-  .social-link span {
-    font-size: 0.8rem;
-  }
-
-  .contact-form {
-    padding: 1.5rem;
+  .achievements-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Mobile - Extra Small Screens */
-@media (max-width: 480px) {
+@media (max-width: 860px) {
   .navbar-container {
-    height: 60px;
-  }
-  
-  .navbar-list {
-    gap: 0.5rem;
-  }
-  
-  .navbar-link {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.85rem;
-  }
-  
-  .home-page {
-    padding: 1rem;
-    padding-top: 4.5rem;
-    min-height: 100vh;
-  }
-  
-  .profile-section {
-    margin-top: 0;
-  }
-  
-  .profile-image {
-    width: 140px;
-    height: 140px;
-  }
-  
-  .home-content {
-    gap: 1.5rem;
-  }
-  
-  .name-title {
-    font-size: clamp(2rem, 8vw, 2.5rem);
-  }
-  
-  .role-subtitle {
-    font-size: clamp(1rem, 4vw, 1.2rem);
-  }
-  
-  .intro-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .key-highlights {
+    height: auto;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
   }
-  
-  .highlight-item {
+
+  .navbar-list {
     width: 100%;
-    max-width: 280px;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .cta-buttons {
-    gap: 0.75rem;
-  }
-  
-  .btn-primary,
-  .btn-secondary {
-    padding: 0.875rem 1.5rem;
-    font-size: 0.95rem;
-  }
-  
-  .about-section-item {
-    padding: 1rem;
-  }
-  
-  .btn-main {
-    padding: 0.625rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* Extra small screens (320px - 360px) */
-@media (max-width: 360px) {
-  .home-page {
-    padding: 0.75rem;
-    padding-top: 4.5rem;
-  }
-  
-  .home-content {
-    gap: 1.25rem;
-  }
-  
-  .profile-section {
-    margin-top: 0;
-  }
-  
-  .profile-image {
-    width: 120px;
-    height: 120px;
-  }
-  
-  .name-title {
-    font-size: clamp(1.8rem, 10vw, 2.2rem);
-    line-height: 1.1;
-  }
-  
-  .role-subtitle {
-    font-size: clamp(0.9rem, 5vw, 1.1rem);
-  }
-  
-  .intro-text {
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
-  }
-  
-  .key-highlights {
-    gap: 0.5rem;
-  }
-  
-  .highlight-item {
-    max-width: 260px;
-    padding: 0.625rem 0.875rem;
-    font-size: 0.85rem;
-    min-height: 44px; /* Accessibility: minimum touch target */
-  }
-  
-  .highlight-icon {
-    font-size: 1.25rem;
-  }
-  
-  .cta-buttons {
-    gap: 0.625rem;
-  }
-  
-  .btn-primary,
-  .btn-secondary {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
-    min-height: 44px; /* Accessibility: minimum touch target */
+    justify-content: flex-start;
   }
 
-  .project-card {
-    padding: 1rem;
+  .page-container {
+    padding-top: 116px;
   }
 
-  .about-section,
-  .contact-section {
-    padding: 2rem 1rem;
-    border-radius: 12px;
+  .skills-stack {
+    grid-template-columns: 1fr;
   }
 
   .contact-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .social-link {
-    flex-direction: row;
-    gap: 0.75rem;
-    min-width: 120px;
-    justify-content: center;
-  }
-
-  .contact-form {
-    padding: 1rem;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    font-size: 0.9rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Medium screens (769px - 1199px) - Tablet Landscape */
-@media (min-width: 769px) and (max-width: 1199px) {
-  .home-page {
-    padding: 2rem 1.5rem;
-  }
-  
-  .home-content {
-    gap: 2.75rem;
-  }
-  
-  .profile-image {
-    width: 220px;
-    height: 220px;
-  }
-  
+@media (max-width: 680px) {
+  .projects-grid,
+  .achievements-grid,
   .key-highlights {
-    gap: 1.5rem;
-  }
-  
-  .highlight-item {
-    flex: 1 1 calc(33.333% - 1rem);
-    min-width: 180px;
-  }
-  
-  .cta-buttons {
-    gap: 1.25rem;
-  }
-  
-  .projects-container-wrapper {
-    max-width: 1000px;
-    padding: 0 2rem;
+    grid-template-columns: 1fr;
   }
 
-  .projects-stack {
-    max-width: 900px;
+  .project-card-inner {
+    grid-template-rows: 150px auto;
   }
 
-  .project-tile {
-    max-width: 850px;
-  }
-  
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  .modal-actions {
+    flex-direction: column;
   }
 
-  .project-card {
-    min-height: 370px;
-  }
-
-  .project-card-image {
-    height: 180px;
+  .modal-action-btn {
+    width: 100%;
   }
 }
 
-/* Large Screen Adjustments */
-@media (min-width: 1200px) {
-  .projects-container-wrapper {
-    max-width: 1200px;
-    padding: 0 3rem;
+@media (max-width: 480px) {
+  .page-container {
+    padding-top: 128px;
   }
 
-  .projects-stack {
-    max-width: 1000px;
+  .page-title {
+    font-size: 2rem;
   }
 
-  .project-tile {
-    max-width: 950px;
+  .contact-list {
+    grid-template-columns: 1fr;
   }
 
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+  .quick-link,
+  .btn-primary,
+  .btn-secondary,
+  .btn-main {
+    width: 100%;
   }
 
-  .project-card {
-    min-height: 400px;
+  .cta-buttons,
+  .quick-links {
+    width: 100%;
+  }
+
+  .home-content,
+  .about-container,
+  .contact-container,
+  .achievements-container,
+  .skill-tier,
+  .category-filter {
+    border-radius: var(--radius-md);
   }
 }

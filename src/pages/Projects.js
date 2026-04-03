@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import unique project images
 import codespaceImage from "../Images/CodeSpace.png";
 import ecommerceImage from "../Images/Ecom.png";
@@ -23,6 +23,9 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [projectLikes, setProjectLikes] = useState({});
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const modalRef = useRef(null);
+  const closeButtonRef = useRef(null);
+  const previousFocusRef = useRef(null);
 
   const categories = [
     'All',
@@ -68,6 +71,71 @@ const Projects = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!selectedProject) {
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    previousFocusRef.current = document.activeElement;
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(() => {
+      closeButtonRef.current?.focus();
+    }, 0);
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setSelectedProject(null);
+        return;
+      }
+
+      if (event.key !== 'Tab' || !modalRef.current) {
+        return;
+      }
+
+      const focusableElements = modalRef.current.querySelectorAll(
+        'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
+      );
+
+      if (!focusableElements.length) {
+        return;
+      }
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+      if (previousFocusRef.current && typeof previousFocusRef.current.focus === 'function') {
+        previousFocusRef.current.focus();
+      }
+    };
+  }, [selectedProject]);
+
+  const openProject = (projectId) => {
+    setSelectedProject(projectId);
+  };
+
+  const handleCardKeyDown = (event, projectId) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openProject(projectId);
+    }
+  };
 
   const projects = [
     {
@@ -628,7 +696,11 @@ const Projects = () => {
                 <div
                   key={project.id}
                   className="project-card"
-                  onClick={() => setSelectedProject(project.id)}
+                  onClick={() => openProject(project.id)}
+                  onKeyDown={(event) => handleCardKeyDown(event, project.id)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`Open project details for ${project.title}`}
                 >
                   <div className="project-card-inner">
                     <div className={`project-card-image bg-gradient-to-br ${project.color}`}>
@@ -663,14 +735,6 @@ const Projects = () => {
                         )}
                       </div>
                       
-                      <div className="project-card-actions">
-                        <button className="view-details-btn">
-                          View Details
-                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
-                          </svg>
-                        </button>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -680,8 +744,21 @@ const Projects = () => {
             {/* Detail Modal */}
             {selectedProject && (
               <div className="project-modal-overlay" onClick={() => setSelectedProject(null)}>
-                <div className="project-modal" onClick={(e) => e.stopPropagation()}>
-                  <button className="modal-close" onClick={() => setSelectedProject(null)}>
+                <div
+                  className="project-modal"
+                  onClick={(e) => e.stopPropagation()}
+                  role="dialog"
+                  aria-modal="true"
+                  aria-label="Project details"
+                  tabIndex={-1}
+                  ref={modalRef}
+                >
+                  <button
+                    className="modal-close"
+                    onClick={() => setSelectedProject(null)}
+                    aria-label="Close project details"
+                    ref={closeButtonRef}
+                  >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
                     </svg>
