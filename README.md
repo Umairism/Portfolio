@@ -1,7 +1,7 @@
 # Portfolio Website
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://umairhakeem.netlify.app)
-[![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 > Full-stack engineer building production-ready solutions across web, blockchain, AI/ML, and cybersecurity.
@@ -139,7 +139,7 @@ cd Portfolio
 npm install
 
 # Start dev server (http://localhost:3000)
-npm start
+npm run dev
 
 # Build for production
 npm run build

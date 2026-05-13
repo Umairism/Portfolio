@@ -1,21 +1,22 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 // Import unique project images
-import codespaceImage from "../Images/CodeSpace.png";
-import ecommerceImage from "../Images/Ecom.png";
-import slimeTubeImage from "../Images/SlimeTube.png";
-import portalImage from "../Images/portal.png";
-import ddosToolImage from "../Images/Ddos.png";
-import weatherAppImage from "../Images/weather.png";
-import wordpressImage from "../Images/adobe.png";
-import medicalImage from "../Images/Medi.png";
-import xpertiImage from "../Images/Xperti.png";
-import droneImage from "../Images/Drone.png";
-import PortableAiImage from "../Images/PortableAiAgent.png";
-import aircrackGuiImage from "../Images/Aircrack.png";
-import benchmarkImage from "../Images/me3.png";
-import blockchainCertImage from '../Images/lockchain-cert.png';
-import linuxosDesktopImage from '../Images/LinuxOS-Desktop.png';
-import proposalImage from '../Images/Proposal.png';
+import codespaceImage from "../../Images/CodeSpace.png";
+import ecommerceImage from "../../Images/Ecom.png";
+import slimeTubeImage from "../../Images/SlimeTube.png";
+import portalImage from "../../Images/portal.png";
+import ddosToolImage from "../../Images/Ddos.png";
+import weatherAppImage from "../../Images/weather.png";
+import wordpressImage from "../../Images/adobe.png";
+import medicalImage from "../../Images/Medi.png";
+import xpertiImage from "../../Images/Xperti.png";
+import droneImage from "../../Images/Drone.png";
+import PortableAiImage from "../../Images/PortableAiAgent.png";
+import aircrackGuiImage from "../../Images/Aircrack.png";
+import benchmarkImage from "../../Images/me3.png";
+import blockchainCertImage from '../../Images/lockchain-cert.png';
+import linuxosDesktopImage from '../../Images/LinuxOS-Desktop.png';
+import proposalImage from '../../Images/Proposal.png';
 
 const imagePlaceholder = null;
 
@@ -30,7 +31,7 @@ const Projects = () => {
   const categories = [
     'All',
     'Web Development',
-    'Cybersecurity', 
+    'Cybersecurity',
     'Desktop Applications',
     'Blockchain',
     '3D & Graphics',
@@ -147,7 +148,7 @@ const Projects = () => {
       challenges: "Python interpreter integration required building custom WASM bindings. Solved React JSX transpilation in-browser using Babel standalone. Preview isolation needed postMessage communication between iframe and parent.",
       tech: ["React", "TypeScript", "Monaco Editor", "Python Interpreter", "Vite", "WebWorkers", "IndexedDB"],
       github: "https://github.com/Umairism/codespace",
-      live: "https://webcodespace.netlify.app", 
+      live: "https://webcodespace.netlify.app",
       image: codespaceImage,
       color: "from-blue-500 to-purple-600",
       featured: true,
@@ -658,11 +659,123 @@ const Projects = () => {
       live: null,
       image: imagePlaceholder,
       category: "Business & Productivity"
+    },
+    {
+      id: 38,
+      title: "Who Is Umair",
+      problem: "Personal profile and portfolio representation.",
+      solution: "Built a comprehensive personal profile using TypeScript.",
+      decisions: "Leveraged TypeScript for a robust and type-safe codebase.",
+      challenges: "Designing an engaging user experience and structuring personal data.",
+      tech: ["TypeScript"],
+      github: "https://github.com/Umairism/who-is-umair",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-blue-500 to-indigo-600",
+      category: "Web Development"
+    },
+    {
+      id: 39,
+      title: "Portfolio",
+      problem: "Need a centralized hub to showcase all personal projects and skills.",
+      solution: "Developed a dynamic portfolio website using React and JavaScript.",
+      decisions: "Chose React for component-based architecture and ease of updates.",
+      challenges: "Implementing smooth animations and responsive design across all devices.",
+      tech: ["JavaScript", "React"],
+      github: "https://github.com/Umairism/Portfolio",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-purple-500 to-pink-600",
+      category: "Web Development"
+    },
+    {
+      id: 40,
+      title: "Res-Changer",
+      problem: "Need a quick way to change screen resolutions programmatically.",
+      solution: "A Python utility to adjust display resolutions.",
+      decisions: "Python offers great cross-platform scripting capabilities.",
+      challenges: "Interacting with OS-level display APIs.",
+      tech: ["Python"],
+      github: "https://github.com/Umairism/Res-Changer",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-gray-500 to-slate-600",
+      category: "Desktop Applications"
+    },
+    {
+      id: 41,
+      title: "Harmonium",
+      problem: "Digital representation of a traditional Harmonium instrument.",
+      solution: "A web-based musical instrument built with TypeScript.",
+      decisions: "TypeScript ensures reliable audio event handling.",
+      challenges: "Minimizing audio latency and creating an intuitive keyboard layout.",
+      tech: ["TypeScript", "Web Audio API"],
+      github: "https://github.com/Umairism/Harmonium",
+      live: "https://myharmo.netlify.app",
+      image: imagePlaceholder,
+      color: "from-orange-500 to-red-600",
+      category: "Media & Entertainment"
+    },
+    {
+      id: 42,
+      title: "Air-Drawing",
+      problem: "Drawing applications require physical input. Wanted a touchless interface.",
+      solution: "Computer vision application using Python to track hand movements and draw on screen.",
+      decisions: "Used OpenCV and MediaPipe for real-time hand tracking.",
+      challenges: "Smoothing out drawing lines and handling varying lighting conditions.",
+      tech: ["Python", "OpenCV", "Computer Vision"],
+      github: "https://github.com/Umairism/Air-Drawing",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-cyan-500 to-blue-600",
+      category: "AI & Machine Learning"
+    },
+    {
+      id: 43,
+      title: "Leading-Ai",
+      problem: "Exploring advanced AI concepts and implementations.",
+      solution: "A repository dedicated to AI experiments and models in Python.",
+      decisions: "Python is the industry standard for AI and ML.",
+      challenges: "Optimizing model performance and managing dependencies.",
+      tech: ["Python", "AI & Machine Learning"],
+      github: "https://github.com/Umairism/Leading-Ai",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-violet-500 to-purple-600",
+      category: "AI & Machine Learning"
+    },
+    {
+      id: 44,
+      title: "Contact-Card-Generator",
+      problem: "Manually creating digital contact cards is tedious.",
+      solution: "An automated Python tool to generate vCard or digital contact formats.",
+      decisions: "Python provides excellent text processing and file generation capabilities.",
+      challenges: "Ensuring compatibility with various contact book applications.",
+      tech: ["Python"],
+      github: "https://github.com/Umairism/Contact-Card-Generator",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-yellow-500 to-orange-600",
+      category: "Business & Productivity"
+    },
+    {
+      id: 45,
+      title: "Email-Bot",
+      problem: "Repetitive email tasks take up valuable time.",
+      solution: "An automated bot written in Python for sending and managing emails.",
+      decisions: "Used Python's smtplib and imaplib for standard email protocols.",
+      challenges: "Handling authentication securely and avoiding spam filters.",
+      tech: ["Python", "Automation"],
+      github: "https://github.com/Umairism/Email-Bot",
+      live: null,
+      image: imagePlaceholder,
+      color: "from-teal-500 to-cyan-600",
+      category: "Business & Productivity"
     }
   ];
 
-  const filteredProjects = selectedCategory === 'All' 
-    ? projects 
+  const filteredProjects = selectedCategory === 'All'
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
   return (
@@ -675,7 +788,7 @@ const Projects = () => {
               Full-stack applications, automation tools, and security utilities. Each project includes
               architectural decisions, tradeoffs, and technical challenges solved.
             </p>
-            
+
             <div className="category-filter">
               <h3 className="filter-title">Filter by Category:</h3>
               <div className="category-buttons">
@@ -690,7 +803,7 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="projects-grid">
               {filteredProjects.map((project, index) => (
                 <div
@@ -705,8 +818,8 @@ const Projects = () => {
                   <div className="project-card-inner">
                     <div className={`project-card-image bg-gradient-to-br ${project.color}`}>
                       {project.image && (
-                        <img 
-                          src={project.image} 
+                        <img
+                          src={project.image}
                           alt={project.title}
                           className="project-image"
                           onError={(e) => {
@@ -718,14 +831,14 @@ const Projects = () => {
                         <span className="project-number">#{project.id}</span>
                       </div>
                     </div>
-                    
+
                     <div className="project-card-content">
                       <h3 className="project-card-title">{project.title}</h3>
-                      
+
                       <div className="project-card-preview">
                         <p className="preview-text">{project.problem}</p>
                       </div>
-                      
+
                       <div className="project-card-tech">
                         {project.tech.slice(0, 3).map((tech, techIndex) => (
                           <span key={techIndex} className="tech-badge">{tech}</span>
@@ -734,13 +847,13 @@ const Projects = () => {
                           <span className="tech-badge more">+{project.tech.length - 3}</span>
                         )}
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-            
+
             {/* Detail Modal */}
             {selectedProject && (
               <div className="project-modal-overlay" onClick={() => setSelectedProject(null)}>
@@ -760,20 +873,20 @@ const Projects = () => {
                     ref={closeButtonRef}
                   >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
-                  
+
                   {(() => {
                     const project = projects.find(p => p.id === selectedProject);
                     if (!project) return null;
-                    
+
                     return (
                       <>
                         <div className={`modal-header bg-gradient-to-br ${project.color}`}>
                           {project.image && (
-                            <img 
-                              src={project.image} 
+                            <img
+                              src={project.image}
                               alt={project.title}
                               className="modal-header-image"
                               onError={(e) => {
@@ -786,28 +899,28 @@ const Projects = () => {
                             <div className="modal-category">{project.category}</div>
                           </div>
                         </div>
-                        
+
                         <div className="modal-body">
                           <div className="modal-section">
                             <h3 className="modal-section-title">Problem</h3>
                             <p className="modal-section-text">{project.problem}</p>
                           </div>
-                          
+
                           <div className="modal-section">
                             <h3 className="modal-section-title">Solution</h3>
                             <p className="modal-section-text">{project.solution}</p>
                           </div>
-                          
+
                           <div className="modal-section">
                             <h3 className="modal-section-title">Key Technical Decisions</h3>
                             <p className="modal-section-text">{project.decisions}</p>
                           </div>
-                          
+
                           <div className="modal-section">
                             <h3 className="modal-section-title">Challenges</h3>
                             <p className="modal-section-text">{project.challenges}</p>
                           </div>
-                          
+
                           <div className="modal-section">
                             <h3 className="modal-section-title">Tech Stack</h3>
                             <div className="modal-tech-tags">
@@ -816,18 +929,18 @@ const Projects = () => {
                               ))}
                             </div>
                           </div>
-                          
+
                           <div className="modal-actions">
                             <button
                               className="modal-action-btn like-btn"
                               onClick={() => handleLike(project.id)}
                             >
                               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                               </svg>
                               <span>{projectLikes[project.id] || 0} Likes</span>
                             </button>
-                            
+
                             {project.github && (
                               <a
                                 href={project.github}
@@ -836,12 +949,12 @@ const Projects = () => {
                                 className="modal-action-btn github-btn"
                               >
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                                 </svg>
                                 GitHub
                               </a>
                             )}
-                            
+
                             {project.live && (
                               <a
                                 href={project.live}
@@ -850,7 +963,7 @@ const Projects = () => {
                                 className="modal-action-btn live-btn"
                               >
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                                 Live Demo
                               </a>

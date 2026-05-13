@@ -1,5 +1,6 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import "../styles/Skills.css";
+import "../../styles/Skills.css";
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);

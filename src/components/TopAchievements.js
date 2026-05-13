@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import '../components/TopAchievements.css';
 
 const TopAchievements = () => {
@@ -130,7 +130,7 @@ const TopAchievements = () => {
         </div>
         
         <div className="achievements-footer">
-          <Link to="/projects" className="view-all-projects">
+          <Link href="/projects" className="view-all-projects">
             <span>🚀</span>
             View All Projects
             <span>→</span>

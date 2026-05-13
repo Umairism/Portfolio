@@ -1,11 +1,12 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
-  const resumePath = `${process.env.PUBLIC_URL || ''}/resume.html`;
-  const resumeHref = `${window.location.origin}${resumePath}`;
+  const pathname = usePathname();
+  const resumeHref = `/resume.html`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   const getActiveClass = (path) => {
-    return location.pathname === path ? 'active' : '';
+    return pathname === path ? 'active' : '';
   };
 
   return (
@@ -30,7 +31,7 @@ const Navbar = () => {
         <ul className="navbar-list">
           <li>
             <Link 
-              to="/" 
+              href="/" 
               className={`navbar-link ${getActiveClass('/')}`}
             >
               Home
@@ -38,7 +39,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/projects" 
+              href="/projects" 
               className={`navbar-link ${getActiveClass('/projects')}`}
             >
               Projects
@@ -46,7 +47,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/skills" 
+              href="/skills" 
               className={`navbar-link ${getActiveClass('/skills')}`}
             >
               Skills
@@ -54,7 +55,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/about" 
+              href="/about" 
               className={`navbar-link ${getActiveClass('/about')}`}
             >
               About
@@ -62,7 +63,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/contact" 
+              href="/contact" 
               className={`navbar-link ${getActiveClass('/contact')}`}
             >
               Contact

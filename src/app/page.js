@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import TopAchievements from '../components/TopAchievements';
 import '../components/TopAchievements.css';
+import Image from 'next/image';
+import profileImg from '../Images/ULP.png';
 
 const Home = () => {
   return (
@@ -10,10 +12,13 @@ const Home = () => {
         <div className="home-container">
           <div className="home-content">
             <div className="profile-section">
-              <img
-                src={require('../Images/ULP.png')}
+              <Image
+                src={profileImg}
                 alt="Muhammad Umair Hakeem"
                 className="profile-image"
+                width={200}
+                height={200}
+                style={{ objectFit: 'cover' }}
               />
               <h1 className="name-title">Muhammad Umair Hakeem</h1>
               <h2 className="role-subtitle">Computer Science Undergraduate</h2>
@@ -48,7 +53,7 @@ const Home = () => {
             
             <div className="cta-section">
               <div className="cta-buttons">
-                <Link to="/projects" className="btn-primary">
+                <Link href="/projects" className="btn-primary">
                   View Projects
                 </Link>
                 <a href="/resume.pdf" download className="btn-secondary">
@@ -57,11 +62,11 @@ const Home = () => {
               </div>
               
               <div className="quick-links">
-                <Link to="/skills" className="quick-link">
+                <Link href="/skills" className="quick-link">
                   <span className="quick-link-icon">⚡</span>
                   <span>Tech Stack</span>
                 </Link>
-                <Link to="/contact" className="quick-link">
+                <Link href="/contact" className="quick-link">
                   <span className="quick-link-icon">📧</span>
                   <span>Contact</span>
                 </Link>

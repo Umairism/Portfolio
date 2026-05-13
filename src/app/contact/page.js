@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import emailjs from 'emailjs-com';

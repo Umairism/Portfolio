@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -43,7 +43,7 @@ const About = () => {
 
               <div className="about-cta">
                 <div className="cta-buttons">
-                  <Link to="/projects" className="btn-primary">
+                  <Link href="/projects" className="btn-primary">
                     View Projects
                   </Link>
                   <a href="/resume.pdf" download className="btn-secondary">
