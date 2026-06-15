@@ -32,7 +32,7 @@ export function inferDescription(repo) {
     }
   }
 
-  if (repo.language && LANGUAGE_FALLBACKS[repo.language]) {
+  if (repo.language && typeof LANGUAGE_FALLBACKS[repo.language] === "string") {
     return LANGUAGE_FALLBACKS[repo.language];
   }
 
