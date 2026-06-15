@@ -1,206 +1,127 @@
-# Portfolio Website
+# Developer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://umairhakeem.netlify.app)
-[![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+A professional developer portfolio showcasing full-stack web applications, blockchain systems, AI/ML models, and security utilities. This site features a dynamic integration with GitHub to display projects in real time, alongside selected academic study projects.
 
-> Full-stack engineer building production-ready solutions across web, blockchain, AI/ML, and cybersecurity.
+## Live Application
 
-**[🚀 View Portfolio](https://umairhakeem.netlify.app)** • **[💼 LinkedIn](https://www.linkedin.com/in/umairsim/)** • **[📧 Contact](mailto:malikumairhakim@outlook.com)**
+The portfolio is deployed and accessible at: https://umairhakeem.netlify.app
 
 ---
 
-## 🎯 Quick Links
+## Key Features
 
-**Featured Work** → [CodeSpace](#codespace) • [HealSense](#healsense) • [Blockchain Certs](#blockchain-certs) • [PenTest Framework](#pentest)
-
-**Tech Stack** → React • TypeScript • Python • Node.js • Ethereum • TensorFlow • Docker
-
----
-
-## 🚀 Featured Projects
-
-<div id="codespace"></div>
-
-### 🖥️ [CodeSpace](https://github.com/Umairism/codespace) • [Live Demo](https://webcodespace.netlify.app)
-**Zero-setup browser IDE with Monaco Editor and real-time Python execution.**  
-*Like VSCode but runs entirely client-side—no servers, instant dev environment.*
-
-![CodeSpace Screenshot](./src/Images/CodeSpace.png)
+- **Dynamic Projects Integration**: Feeds repositories directly from GitHub, applying smart category mapping and technology stack inference.
+- **Academic Studies Section**: Showcases curated curriculum projects, complete with links to live demo deployments.
+- **Responsive Layout**: Designed with a modern CSS architecture featuring glassmorphism, responsive grids, and detailed project detail modals.
+- **Robust Fallback Engine**: Instantly falls back to local static project definitions if the GitHub API hits rate limits or encounters network errors.
 
 ---
 
-<div id="healsense"></div>
+## Featured Work
 
-### 🏥 [HealSense](https://github.com/Umairism/FYP-Project)
+### CodeSpace
+**Zero-setup browser IDE with Monaco Editor and client-side Python execution.**  
+Provides a complete code execution sandbox directly in the browser using WebAssembly. Runs without server-side dependencies for instant client-side testing.  
+GitHub: https://github.com/Umairism/codespace | Live Demo: https://webcodespace.netlify.app
+
+### HealSense
 **IoT health surveillance with TensorFlow predictions on Raspberry Pi clusters.**  
-*Final Year Project: ML-powered vitals monitoring with Flutter mobile dashboard.*
+A machine learning-powered health monitoring platform that captures patient vitals and flags potential health alerts using local Raspberry Pi sensors and a Flutter mobile interface.  
+GitHub: https://github.com/Umairism/FYP-Project
+
+### Blockchain Certificate Verification
+**Ethereum-backed credential verification with AI-assisted fraud detection.**  
+A tamper-proof credential verification system leveraging Ethereum smart contracts, MetaMask wallet integration, and OCR-based document parsing for instant verification.  
+GitHub: https://github.com/Umairism/blockchain-cert-system
+
+### Advanced PenTest Framework
+**Ethical hacking toolkit for network auditing and security analysis.**  
+A custom security suite featuring network scanning, automated payload generation, and interactive vulnerability report exports, built with Python.  
+GitHub: https://github.com/Umairism/advanced-pentest-framework
+
+### LinuxOS Desktop
+**Web-based mock desktop environment inspired by macOS.**  
+An interactive web desktop equipped with functional client-side apps, including a mock terminal, web browser, and utility tools.  
+GitHub: https://github.com/umairism/linuxos-desktop | Live Demo: https://linuxos.netlify.app
 
 ---
 
-<div id="blockchain-certs"></div>
+## Technical Stack Overview
 
-### 🔐 [Blockchain Certificate Verification](https://github.com/Umairism/blockchain-cert-system)
-**Ethereum-backed credential verification with AI fraud detection (FAISS + OCR).**  
-*Tamper-proof diplomas stored on-chain with MetaMask integration.*
-
-![Blockchain Certificate System](./src/Images/lockchain-cert.png)
-
----
-
-<div id="pentest"></div>
-
-### 🛡️ [Advanced PenTest Framework](https://github.com/Umairism/advanced-pentest-framework)
-**Professional security toolkit—network scanning, payload generation, vulnerability reports.**  
-*Python-based framework with GUI for ethical hacking and CTF challenges.*
-
-![PenTest Framework](./src/Images/Aircrack.png)
+- **Frontend**: React, TypeScript, Next.js, Tailwind CSS, Three.js
+- **Backend and APIs**: Node.js, Python, Flask, FastAPI, ASP.NET Core
+- **Databases**: PostgreSQL, MongoDB, Supabase, SQL Server
+- **Blockchain**: Solidity, Ethereum, Web3.js, IPFS
+- **Machine Learning and IoT**: TensorFlow, PyTorch, OpenCV, Raspberry Pi, DroneKit
+- **Mobile**: Flutter, React Native
+- **DevOps and Hosting**: Docker, Kubernetes, GitHub Actions, Netlify, Vercel
 
 ---
 
-### 📰 [The Chronicle](https://github.com/Umairism/The-Chronicle)
-**News aggregation + CMS with Supabase backend and multi-source feeds.**
+## Local Development and Setup
 
-### 🖱️ [LinuxOS Desktop](https://github.com/umairism/linuxos-desktop) • [Live](https://linuxos.netlify.app)
-**macOS-inspired web desktop with functional apps—browser, terminal, calculator.**
+### Prerequisites
+- Node.js 18.0 or higher
+- npm 9.0 or higher
 
-![LinuxOS Desktop](./src/Images/LinuxOS-Desktop.png)
+### Installation
 
----
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Umairism/Portfolio.git
+   cd Portfolio
+   ```
 
-## 💼 More Projects
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-<details>
-<summary><b>Web Development (8 projects)</b></summary>
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+   Open http://localhost:3000 in your browser to view the application.
 
-- **[ModernShop E-Commerce](https://github.com/Umairism/e-commerce)** • [Demo](https://myecoms.netlify.app) — Serverless shopping cart with Netlify Functions
-- **[WeddingShare](https://github.com/Umairism/WeddingShare)** • [Demo](https://wedding-share-vert.vercel.app) — Next.js event media upload with JWT auth
-- **[SlimeTube](https://github.com/Umairism/SlimeTube)** • [Demo](https://flixii.netlify.app/) — Video streaming platform with IndexedDB persistence
-- **Taskify, TaskMaster, Postit** — Task management apps with varied tech stacks
-
-</details>
-
-<details>
-<summary><b>Cybersecurity (3 projects)</b></summary>
-
-- **[Aircrack-NG GUI](https://github.com/Umairism/Aircrack_GUI)** — Web interface for wireless security auditing with FastAPI backend
-- **DDoS Simulator** — Educational tool for understanding network attacks
-
-</details>
-
-<details>
-<summary><b>AI & ML (3 projects)</b></summary>
-
-- **[Portable AI Agent](https://github.com/Umairism/Porable-Ai-Agent)** — Offline-capable AI with PyTorch, privacy-first design
-- **[Surveillance Drone](https://github.com/Umairism/Drone-System)** — Computer vision + DroneKit for autonomous flight paths
-
-</details>
-
-<details>
-<summary><b>Business & Enterprise (5 projects)</b></summary>
-
-- **[Office Management System](https://github.com/Umairism/OfficeManagementSystem)** — ASP.NET employee management with N-tier architecture
-- **Medical Store Management** — Healthcare inventory with comprehensive reporting
-- **Benchmark School System** — Educational platform with analytics
-- **Teachers Club** — Course management and student tracking
-
-</details>
-
-**[📂 View All 37+ Projects](https://umairhakeem.netlify.app)**
+4. Build the application for production:
+   ```bash
+   npm run build
+   ```
 
 ---
 
-## 🛠️ Tech Stack
+## Performance and Quality Standards
 
-```typescript
-{
-  frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Three.js"],
-  backend: ["Node.js", "Python", "Flask", "FastAPI", ".NET"],
-  databases: ["MongoDB", "PostgreSQL", "Supabase", "SQL Server"],
-  blockchain: ["Ethereum", "Solidity", "Web3", "IPFS"],
-  aiml: ["TensorFlow", "PyTorch", "OpenCV", "FAISS"],
-  iot: ["Arduino", "Raspberry Pi", "DroneKit"],
-  mobile: ["React Native", "Flutter"],
-  devops: ["Docker", "Kubernetes", "GitHub Actions", "Prometheus"],
-  deployment: ["Netlify", "Vercel"]
-}
-```
+- Highly optimized performance, aiming for Lighthouse scores of 95+ across all core metrics.
+- Fully accessible layout conforming to WCAG standards.
+- Fast interactive response times with mobile-first media queries and responsive styling.
 
 ---
 
-## 🚀 Quick Start
+## Project Repository Guidelines
 
-```bash
-# Clone the repo
-git clone https://github.com/Umairism/Portfolio.git
-cd Portfolio
+### GitHub Topics configuration
+To ensure the automated portfolio categories work efficiently, use relevant repository topics. Recommended tags include:
+`portfolio`, `react`, `typescript`, `fullstack`, `nodejs`, `python`, `blockchain`, `ai-ml`, `iot`, `cybersecurity`, `web-development`, `developer-portfolio`.
 
-# Install dependencies
-npm install
-
-# Start dev server (http://localhost:3000)
-npm run dev
-
-# Build for production
-npm run build
-```
-
-**Requirements:** Node.js 16+
+### Media and Details
+When creating individual project repositories, include:
+- A brief explanation of the project's purpose and architecture.
+- Clear setup instructions for running the code locally.
+- Active badges for live demos and primary technologies.
 
 ---
 
-## 📈 Performance
+## Contact
 
-- ⚡ Lighthouse score: **95+** across all metrics
-- 🌐 Mobile-responsive with sub-2s load times on 3G
-- ♿ WCAG accessibility compliant
+Feel free to reach out for collaboration, freelance work, or engineering opportunities.
 
----
-
-## 📝 Important Notes
-
-### 🏷️ **GitHub Topics**
-To improve discoverability, add these topics to your repository:
-```
-portfolio, react, typescript, fullstack, nodejs, python, blockchain, 
-ai-ml, iot, cybersecurity, web-development, developer-portfolio
-```
-*Go to: Repository Settings → Topics → Add topics*
-
-### 📸 **Project Screenshots**
-Each project repo should include:
-- Hero screenshot in README (use real screenshots, not placeholders)
-- Live demo badge
-- Tech stack badges
-
-**Example:**
-```markdown
-![App Screenshot](./screenshots/hero.png)
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://your-demo.com)
-```
+- Email: malikumairhakim@outlook.com
+- LinkedIn: https://www.linkedin.com/in/umairsim/
+- GitHub: https://github.com/Umairism
 
 ---
 
-## 📞 Contact
+## License
 
-**Available for freelance & full-time roles** in full-stack development, blockchain, and AI/ML.
-
-📧 [malikumairhakim@outlook.com](mailto:malikumairhakim@outlook.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/umairsim/)  
-🐙 [GitHub](https://github.com/Umairism)
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-**⭐ Star this repo if you found it helpful!**
-
-*Made with ❤️ by [Umair Hakim](https://umairhakeem.netlify.app)*
-
-</div>
+This project is licensed under the MIT License. See the LICENSE file for details.

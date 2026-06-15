@@ -335,3 +335,135 @@
   outline: 3px solid rgba(10, 100, 118, 0.35);
   outline-offset: 2px;
 }
+
+/* Studies grid responsive layout */
+.studies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+@media (max-width: 1023px) {
+  .studies-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  .studies-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-modal {
+    width: calc(100vw - 2rem);
+    margin: 1rem auto;
+  }
+}
+
+/* Section tabs navigation */
+.section-tabs {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--space-5);
+}
+
+.section-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.6rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.section-tab[aria-selected="true"] {
+  color: var(--brand-ink);
+  border-bottom-color: var(--brand);
+}
+
+.section-tab:focus-visible {
+  outline: 3px solid rgba(10, 100, 118, 0.35);
+  outline-offset: 2px;
+}
+
+/* Fallback Notice Banner */
+.fallback-notice {
+  background: var(--accent-soft);
+  border: 1px solid #e5c9ae;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.88rem;
+  color: #6b3a1a;
+  margin-bottom: var(--space-4);
+}
+
+/* Shimmer Loading Skeleton */
+.skeleton-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface);
+  height: 310px;
+}
+
+.skeleton-block {
+  background: linear-gradient(90deg, var(--surface-soft) 25%, #ede5d8 50%, var(--surface-soft) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Study platforms card */
+.study-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+  grid-template-rows: auto 1fr auto auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.study-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.study-card-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.study-card-purpose {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+}
+
+.study-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
